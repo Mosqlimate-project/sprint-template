@@ -1,6 +1,7 @@
 # Template for Infodengue Sprint submission
 This repository should be used as a template for developing your submission. If you already have a GitHub account, You must create a new public repository under your user as shown below:
-![create repo](/repo_creation.pngrepo_creation.png)
+
+![create repo](/repo_creation.png)
 
 You can name your repository any way you like.
 
