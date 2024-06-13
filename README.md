@@ -3,6 +3,8 @@ The Mosqlimate Platform is responsible for all interactions with the the partici
 
 ![image](https://github.com/Mosqlimate-project/sprint-template/assets/4005254/91633601-2d13-4b2d-b9a7-7cbf50b1871a)
 
+That's how it looks like if you got this step right.
+
 
 # Cloning the github template for the Infodengue Sprint submission
 This github repository should be used as a template for developing your submission for the 2024 Infodengue Sprint. To know about the challenge, please read carefully the call [LINK]. 
