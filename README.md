@@ -13,13 +13,13 @@ If you already have a GitHub account, you can create a new public repository cli
 
 ![create repo](/repo_creation.png)
 
- 
+Don't forget to set it as a public repository!
 
+ 
 ## Step-by-step Tutorial of how to prepare your submission
 Now that you have your repository setup, be aware that all modeling work should be committed to it. We assume here that you are already familiar with GitHub and how to use it. If you're not, please take a look at [this tutorial](https://docs.github.com/en/get-started/start-your-journey/hello-world).
 
 If you already have source code related to the model you will work with, you can copy the code to this repository, or start from scratch based on your previous code.
-
 
 
 ### Installing the Mosqlient library
