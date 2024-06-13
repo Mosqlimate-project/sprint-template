@@ -1,19 +1,23 @@
-# Template for Infodengue Sprint submission
-This repository should be used as a template for developing your submission. If you already have a GitHub account, You must create a new public repository under your user as shown below:
+### Registering in the Mosqlimate Platform
+The Mosqlimate Platform is responsible for all interactions with the the participants of this sprint, including getting the data and uploading predictions. Therefore, to participate in this sprint, the first step we require from you, as team leader, is to register your team to the Mosqlimate platform (There is not cost associate with this membership). In order to to this, simply go to [api.mosqlimate.org](https://api.mosqlimate.org/), click on the "Login with GitHub" in the top right corner of the page, and follow the instructions. Once you create your Mosqlimate profile, you are set to follow the steps below.
+
+![image](https://github.com/Mosqlimate-project/sprint-template/assets/4005254/91633601-2d13-4b2d-b9a7-7cbf50b1871a)
+
+
+# Cloning the github template for the Infodengue Sprint submission
+This github repository should be used as a template for developing your submission for the 2024 Infodengue Sprint. To know about the challenge, please read carefully the call [LINK]. 
+
+If you already have a GitHub account, you can create a new public repository clicking the (+) button on the top right of this page. In the following page, you can create the repo under your user as shown below. You can name your repository any way you like, we recommend a name easy to remember!
 
 ![create repo](/repo_creation.png)
 
-You can name your repository any way you like. 
+ 
 
 ## Step-by-step Tutorial of how to prepare your submission
-Now that you have your repository setup, all modeling work should be committed to it. We assume here that you are already familiar with GitHub and how to use it. If you're not, please take a look at [this tutorial](https://docs.github.com/en/get-started/start-your-journey/hello-world).
+Now that you have your repository setup, be aware that all modeling work should be committed to it. We assume here that you are already familiar with GitHub and how to use it. If you're not, please take a look at [this tutorial](https://docs.github.com/en/get-started/start-your-journey/hello-world).
 
 If you already have source code related to the model you will work with, you can copy the code to this repository, or start from scratch based on your previous code.
 
-### Registering in the Mosqlimate Platform
-The Mosqlimate Platform is responsible for all interactions with the the participants of this sprint. Therefore, to participate in this sprint, we require you, as team leader, to register to the Mosqlimate platform (There is not cost associate with this membership). In order to to this, simply go to [api.mosqlimate.org](https://api.mosqlimate.org/), click on the "Login with GitHub" in the top right corner of the page, and follow the instructions. Once you create your Mosqlimate profile, you are set to follow the steps below.
-
-![image](https://github.com/Mosqlimate-project/sprint-template/assets/4005254/91633601-2d13-4b2d-b9a7-7cbf50b1871a)
 
 
 ### Installing the Mosqlient library
