@@ -25,6 +25,17 @@ We assume here that you are already familiar with GitHub and how to use it. If y
 
 If you already have source code related to the model you will work with, you can copy the code to this repository, or start from scratch based on your previous code.
 
+## Checking for minimal configuration requirements on your operating system
+
+Since you are going to use a python library to submit your work, before installing it you need to make sure that you OS has a working Python installation.
+
+On a debian-based Linux distribution(Ubuntu, Mint, etc.), just run the following command:
+
+```bash
+sudo apt install python3-dev jupyter python3-venv python3-pip
+```
+
+On Mac OS
 
 ### Installing the Mosqlient library
 The Mosqlimate platform is where all models and predictions are stored, alongside with the data used for the modeling. It provides a [REST API](https://api.mosqlimate.org/api/docs) that is completely language agnostic, for accessing the data as well as registering models. it is fully documented but requires some familiarity with APIs to use.
