@@ -34,21 +34,35 @@ In addition, we make available a a simplified client library named [Mosqlient li
 To install the library for Python, from the os terminal type:
 
 ```bash
-$ pip install -U git+https://github.com/Mosqlimate-project/mosqlimate-client.git
+$ pip install -U mosqlient
 ```
 
 for R:
 
 ```R
 > library(reticulate)
-> py_install("git+https://github.com/Mosqlimate-project/mosqlimate-client.git")
+> py_install("mosqlient")
 ```
 
 You need to already have the reticulate package installed.
 
 
 ### Starting your work!
-We prepared a couple of demo notebooks to get you started. Follow the [R demo notebook](/Demo%20Notebooks/R%20demo.ipynb) or [Python demo notebook](/Demo%20Notebooks/Python%20demo.ipynb) to learn of the essential steps you must follow to complete a submission of your work. If you run into dificulties, please reach out fo help at our [sprint community forum]() on our discord server.
+We prepared a couple of demo Jupyter notebooks to get you started.  In you local computer make sure you have Python 3.x and Jupyter installed.
+
+If you are an R user, make sure you have the R kernel installed in your Jupyter notebook. you can install it by running the following command **in an R terminal**:
+
+```R
+> install.packages("IRkernel")
+> IRkernel::installspec()
+```
+
+After this you can just open the notebooks indicated below and follow the instructions in them.
+
+
+Follow the [R demo notebook](/Demo%20Notebooks/R%20demo.ipynb) or [Python demo notebook](/Demo%20Notebooks/Python%20demo.ipynb) to learn of the essential steps you must follow to complete a submission of your work. If you run into dificulties, please reach out fo help at our [sprint community forum]() on our discord server.
+
+If you prefer not to work on a jupyter notebook
 
 
 
