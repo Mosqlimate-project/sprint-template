@@ -6,7 +6,7 @@ The Mosqlimate Platform is responsible for all interactions with the the partici
 
 ![image](https://github.com/Mosqlimate-project/sprint-template/assets/4005254/91633601-2d13-4b2d-b9a7-7cbf50b1871a)
 
-That's how it looks like if you got this step right.
+That's how it looks like if you got this step right. Notice the green button on you profile page. If you click on it it will show the your unique API Key which you will need to register your model and upload you predictions.
 
 Now let's move on to setting up the GitHub repository for your submission.
 
@@ -78,7 +78,41 @@ Follow the [R demo notebook](/Demo%20Notebooks/R%20demo.ipynb) or [Python demo n
 
 If you prefer not to work on a Jupyter notebook,  we have added standalone R scripts alongside the demo notebooks.
 
+## Model and Prediction Specifications
+After you finish fitting your model, youl will need to register it on the platform and upload its prediction for each target area (UF or Country).
 
+These data will have to be formatted as JSON objects. For the model registration it will look like this:
+
+```JSON
+{
+        "name": "my_model",
+        "description": "model's description",
+        "repository": "https://github.com...",
+        "implementation_language": "R",
+        "disease": "dengue",
+        "temporal": true,
+        "spatial": false,
+        "categorical": false,
+        "ADM_level": 1,
+        "time_resolution": "week",
+    }
+```
+
+where `adm_level` 1 indicates to a state-level forecasting model. Country-level would be level 2.
+
+For a prediction the JSON Object will look like this:
+```JSON
+{
+  "model": 24,
+  "description": "My Prediction description",
+  "commit": "3d1d2cd016fe38b6e7d517f724532de994d77618",
+  "predict_date": "2023-10-31",
+  "prediction": {...}
+}
+
+Model on the JSON above contains the ID of the model you registered on the platform. You can find this number on you profile page, where all your registered models will be listed. `commit` is the git last commit id you repository is in. This indicates the specific version of your code that generated the prediction. This is important for reproductibility reasons. You can find the commit id with the `git log` command. The last commit id will appear at the top of the log. it can also be seen on the main page of your repository on GitHub.
+   
+For detailed instruction on how to upload the models and predictions, please consult the demo Notebooks and scripts. Also feel free to ask questions on our discor server: 
 
 
 
