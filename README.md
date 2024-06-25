@@ -109,8 +109,14 @@ For a prediction the JSON Object will look like this:
   "predict_date": "2023-10-31",
   "prediction": {...}
 }
+```
 
-Model on the JSON above contains the ID of the model you registered on the platform. You can find this number on you profile page, where all your registered models will be listed. `commit` is the git last commit id you repository is in. This indicates the specific version of your code that generated the prediction. This is important for reproductibility reasons. You can find the commit id with the `git log` command. The last commit id will appear at the top of the log. it can also be seen on the main page of your repository on GitHub.
+Model on the JSON above contains the ID of the model you registered on the platform. You can find this number on you profile page, where all your registered models will be listed. `commit` is the git last commit id you repository is in. This indicates the specific version of your code that generated the prediction. This is important for reproductibility reasons. You can find the commit id with the `git log` command. The last commit id will appear at the top of the log. it can also be seen on the main page of your repository on GitHub. The `predict` field should point to anothe JSON object corresponding to the actual model output which will look like this:
+
+![image](https://github.com/Mosqlimate-project/sprint-template/assets/140123/0a297c1f-a220-48cb-ae7b-5a385a708f89)
+
+but exported as JSON.
+
    
 For detailed instruction on how to upload the models and predictions, please consult the demo Notebooks and scripts. Also feel free to ask questions on our [discord server](https://discord.gg/xNAt3tGJK5). 
 
