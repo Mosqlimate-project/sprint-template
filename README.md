@@ -76,7 +76,7 @@ After this you can just open the notebooks indicated below and follow the instru
 
 Follow the [R demo notebook](/Demo%20Notebooks/R%20demo.ipynb) or [Python demo notebook](/Demo%20Notebooks/Python%20demo.ipynb) to learn of the essential steps you must follow to complete a submission of your work. If you run into dificulties, please reach out fo help at our [sprint community forum]() on our discord server.
 
-If you prefer not to work on a Jupyter notebook,  we have added standalone R scripts alongside the demo notebooks.
+If you prefer not to work on a Jupyter notebook,  we have also added a [Rmd script](/Demo%20Notebooks/demo.Rmd) to be used in your prefered editor.
 
 ## Model and Prediction Specifications
 After you finish fitting your model, youl will need to register it on the platform and upload its prediction for each target area (UF or Country).
