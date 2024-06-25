@@ -112,7 +112,7 @@ For a prediction the JSON Object will look like this:
 
 Model on the JSON above contains the ID of the model you registered on the platform. You can find this number on you profile page, where all your registered models will be listed. `commit` is the git last commit id you repository is in. This indicates the specific version of your code that generated the prediction. This is important for reproductibility reasons. You can find the commit id with the `git log` command. The last commit id will appear at the top of the log. it can also be seen on the main page of your repository on GitHub.
    
-For detailed instruction on how to upload the models and predictions, please consult the demo Notebooks and scripts. Also feel free to ask questions on our discor server: 
+For detailed instruction on how to upload the models and predictions, please consult the demo Notebooks and scripts. Also feel free to ask questions on our [discord server](https://discord.gg/xNAt3tGJK5). 
 
 
 
