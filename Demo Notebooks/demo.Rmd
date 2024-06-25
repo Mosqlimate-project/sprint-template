@@ -154,11 +154,11 @@ adm_3: NA
 uf = "RJ"  # change that accordingly to your data
 x <- data.frame(forecast(fit.train,h=52))[,c("Point.Forecast","Lo.95","Hi.95")] 
 x <- x %>%
-  mutate(date = as.Date(date_decimal(as.numeric(row.names(x)))),
+  mutate(dates = as.Date(date_decimal(as.numeric(row.names(x)))),
          adm_1 = uf, 
          adm_2 = NA,
          adm_3 = NA) %>%
-  select(date, 
+  select(dates, 
          preds = Point.Forecast,
          lower = Lo.95,
          upper = Hi.95,
@@ -176,7 +176,8 @@ Converting to JSON
 library(jsonlite)
 
 y <- toJSON(x)
+y
 ```
 
-Instructions to upload this object is in the github readme
+Instructions to upload this object is in the github README
 
