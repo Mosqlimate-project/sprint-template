@@ -1,0 +1,182 @@
+---
+title: "2024 Infodengue Sprint"
+output: html_notebook
+---
+
+This script shows how to fit a simple forecast model to the dengue data and upload it to 
+the Mosqlimate platform. Your job is to do better than this model!  
+
+## Getting the system ready
+
+To latter upload your projections to the platform, you will use the mosqlient, a python
+interface. To run the commands, the reticulate library is required.
+
+```{r}
+# un/comment if you need to install these libraries
+#install.packages('pak') # useful for installing reticulate
+library(pak)
+#pak::pak("rstudio/reticulate")
+```
+
+Now it is time to install the mosqlient
+
+```{r}
+# un/comment if you need to install them
+library(reticulate)
+#py_install("mosqlient>=1.2.2", envname='r-reticulate')
+mosq <- import("mosqlient")
+```
+
+
+## Reading the data
+
+To access the data go to info.dengue.mat.br/minio, with your credentials and 
+download the datasets. They are gzip compressed csv files. Here, we will use only
+the disease data.  
+
+The dengue data is provided by week and by municipality. 
+
+```{r, results='hide'}
+library(data.table)
+data <- fread("~/Data/sprint/dengue.csv.gz")
+```
+
+```{r}
+head(data)
+```
+
+
+Let's for the sake of this example fit the dengue series for the state of Rio de Janeiro (UF="RJ"). For this we need to aggregate the cases from all 92 municipalities of the state.
+
+The first challenge is to forecast 22/23 season using previous data. 
+
+```{r}
+dRJ.train <- data %>%
+  filter(train_1) %>%
+  filter(uf == "RJ") %>% 
+  group_by(date) %>% 
+  summarize(casos=sum(casos)) %>% 
+  arrange(date)
+```
+
+```{r}
+dRJ.target <- data %>%
+  filter(target_1) %>%
+  filter(uf == "RJ") %>% 
+  group_by(date) %>% 
+  summarize(casos=sum(casos)) %>% 
+  arrange(date)
+```
+
+## Creating a simple forecast model for the challenge 1
+
+For this demonstration we will train an ARIMA model. 
+
+```{r, results='hide'}
+library(forecast)
+library(tidyverse)
+library(ggplot2)
+```
+
+First, creating time series objects
+
+```{r}
+ts.train <- ts(dRJ.train$casos, start = c(2010, 01), frequency = 52)
+ts.target <- ts(dRJ.target$casos, start = c(2022, 41), frequency = 52)
+```
+
+Plotting the challenge
+
+```{r}
+autoplot(ts.train, colour="blue", xlim = as.Date(c("2010-01-01","2023-10-01")))+
+  autolayer(ts.target)  
+
+```
+
+Training the (very bad) arima model
+
+```{r}
+fit.train = auto.arima(ts.train)
+summary(fit.train)
+```
+```{r}
+autoplot(forecast(fit.train,h=52))+
+autolayer(ts.train) + 
+  autolayer(ts.target)
+```
+
+## Preparing the output for uploading
+
+First, register your model in the platform:
+
+```{r}
+library(reticulate)
+mosq <- import("mosqlient")
+```
+
+You need your API key, to get it, see the instructions in the github readme.
+
+```{r}
+library(httr)
+url <- "https://api.mosqlimate.org/api/registry/models/"
+headers <- add_headers("X-UID-Key"= "put your API key here")
+model <- list(
+    name = "autoarima",
+    description = "demo",
+    repository = "https://github.com/Mosqlimate-project/sprint-template/",
+    implementation_language = "R",
+    disease = "dengue",  
+    spatial = FALSE,
+    temporal = TRUE,
+    categorical = FALSE,
+    ADM_level = 1,
+    time_resolution = "week"
+  )
+response <- POST(url, body = list(model), encode = "json", headers = headers)
+response
+```
+
+
+Now, to register your prediction, you need: 
+1. the id number of your model, see instructions in the github readme
+2. dataframe with the following columns: 
+
+date(YYYY-mm-dd): same used in the dataset
+preds (num): point estimates
+lower (num): 95% lower interval
+upper (num): 95% upper interval
+adm_1 (two letters string): UF code (example: "RJ")
+adm_2: NA  
+adm_3: NA
+
+
+```{r}
+uf = "RJ"  # change that accordingly to your data
+x <- data.frame(forecast(fit.train,h=52))[,c("Point.Forecast","Lo.95","Hi.95")] 
+x <- x %>%
+  mutate(date = as.Date(date_decimal(as.numeric(row.names(x)))),
+         adm_1 = uf, 
+         adm_2 = NA,
+         adm_3 = NA) %>%
+  select(date, 
+         preds = Point.Forecast,
+         lower = Lo.95,
+         upper = Hi.95,
+         adm_1,
+         adm_2,
+         adm_3) %>%
+  remove_rownames()
+
+head(x)
+```
+
+Converting to JSON
+
+```{r}
+library(jsonlite)
+
+y <- toJSON(x)
+```
+
+Instructions to upload this object is in the github readme
+
