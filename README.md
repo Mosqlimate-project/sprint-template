@@ -13,8 +13,8 @@ The **Models** table at the top of you profile page is now empty. But as you reg
 Now let's move on to setting up the GitHub repository for your submission.
 
 
-## Cloning the github template for the Infodengue Sprint submission
-This github repository should be used as a template for developing your submission for the 2024 Infodengue Sprint. To know about the challenge, please read carefully the call [LINK]. 
+## Using the GitHub template for the Infodengue Sprint submission
+This github repository should be used as a template for developing your submission for the 2024 Infodengue Sprint. To know about the challenge, please read carefully [the call](https://docs.google.com/document/d/1KL3ngVuF2HwNSxswd0jqKeJun9eoYGsvzuaq_eF8NAI/edit?usp=sharing). 
 
 If you have a GitHub account, you can create a new public repository clicking the (+) button on the top right of this page. In the following page, you can create the repo under your user as shown below, make sure to use our template as indicated by the red arrow in the figure below. You can name your repository any way you like, we recommend a name easy to remember!
 
