@@ -6,7 +6,7 @@ authors = ["Eduardo Correa Araujo <65051489+eduardocorrearaujo@users.noreply.git
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "<3.12,>=3.10"
+python = "<3.13,>=3.10"
 mosqlient = "1.5.2"
 epiweeks = "^2.3.0"
 jupyter = "^1.0.0"
