@@ -1,3 +1,58 @@
+# Background
+The Mosqlimate group evaluated the performance of each model using a set of scores. The logarithmic score, CRPS and the interval score were computed using the 'ScoringRules Python package'. Other metrics were calculated as additional feedback for the teams, without affecting the classification of the models, such as (i) average scores in these regions of interest in the prediction window, considering epidemic onset (weeks between growth start and the peak) and epidemic peak (3 week window centered on the peak) and (ii) the time lag, maximizing cross-correlation between forecasts and data
+
+Seven teams participating in the Dengue 2024 Sprint submiting several models to dengue prediction using a variety of approaches:
+1. D-fense -
+2. Dobby Data - LTSH model
+3. GeoHealth - Prophet model with PCA and vaiance threshold and LSTM model with PCA and vaiance threshold Models
+4. Global Health Resilience - Temp-SPI Interaction Model
+5. PET - BB-M Model
+6. Ki-Dengu Peppa - Weekly and yearly (iid) components and Weekly and yearly (rw1) components Models
+7. DS_OKSTATE - Info dengue CNN LSTM Ensemble Model
+
+All teams used the tools for visualization and data provided by Mosqlimate platform for tracking arbovirus forecasting experiments:
+• climatic, demographic and case open datasets: https://api.mosqlimate.org/datastore/
+• Model Registry: https://api.mosqlimate.org/models/
+• Visualization tools: https://api.mosqlimate.org/vis/dashboard
+• Forecast scoring tools: logarithmic score, CRPS and the interval score
+
+XX teams used climate data, XX used serotype data, and X used additional data on e.g global climate provided by the team itself. 
+
+After finalizing models the submitting forecasts for 2022-2023 and 2023-2024 training seasons 
+
+# Evaluation Methods
+
+## Model Score
+The logarithmic score, CRP1 and the interval score were computed using the `scoringrules3` Python package. 
+
+The CRPS is computed using the equation below:
+
+$$
+CRPS(\mathcal{N}(\mu_i, \sigma^2_i), y_i) = \sigma_i \left\{ \omega_i[\Phi(\omega_i) - 1] + 2\phi(\omega_i) - \frac{1}{\sqrt{\pi}}\right\},
+$$
+
+where $\Phi(\omega_i)$ and $\phi(\omega_i)$ is the cumulative distribution function (CDF) and the probability density function (PDF) of the standard normal distribution, respectively, evaluated at the normalized prediction error $\omega_i = \cfrac{y_i - \mu_i}{\sigma_i}$. Additionally, $y_i$ represents the cases observed in week $i$, $i$ is the mean forecasted value in week $i$ and $\sigma_i$ is the standard deviation of the forecast on week $i$.
+
+The Log score is computed using the formula below: 
+
+$$
+LogS(\mathcal{N}(\mu_i, \sigma^2_i), y_i) = log\left( \cfrac{\phi(\omega_i)}{\sigma_i}\right)
+$$
+
+The Interval score is computed using the formula below: 
+
+$$
+S^{int}_\alpha(l_i, u_i; y_i) = u_i - l_i + \cfrac{2}{\alpha}(l_i - y_i)I\{y_i < l_i\} + \cfrac{2}{\alpha}(y_i - u_i)I\{y_i > u_i\}
+$$
+
+where $I$ is the indicator function, $\alpha$ the significance level of the interval, $u_i$ the upper value of the interval at week $i$ and $l_i$ the lower value. 
+
+Other metrics were calculated as additional feedback for the teams, without affecting the classification of the models, such as (i) average scores in these regions of interest in the prediction window, considering epidemic onset (weeks between growth start and the peak) and epidemic peak (3 week window centered on the peak) and (ii) the time lag, maximizing cross-correlation between forecasts and data
+ 
+## Ranking
+For each year and state, the models will be assessed according to the six scores listed in the
+table below.
+
 # Results of the score of the models
 
 Teams and model_id na plataforma: 
