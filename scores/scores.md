@@ -120,7 +120,7 @@ For MG:
 | ![MG - 2023](./figures/ranking_MG_2023.png) | ![MG - 2024](./figures/ranking_MG_2024.png) |
 
 
-The overall rank based on the rank for each mandatory state: 
+The global rank for each mandatory state is: 
 
 ![Global](./figures/ranking_global.png)
 
