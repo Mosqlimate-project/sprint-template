@@ -20,7 +20,7 @@ Teams and model_id na plataforma:
 
 ### Ranking 
 
-The figures in this section are generated in the `compare_the_scores_figures.ipynb` notebook. 
+The figures in this section are generated in the `Apply_the_score_to_predictions.ipynb` notebook. 
 
 For AM: 
 
@@ -61,6 +61,8 @@ Global rank based on the rank of each mandatory state:
 
 
 The Figure below represents the CRPS score by model and state: 
+
+The figures in this section are generated in the `compare_the_scores_figures.ipynb` notebook. 
 
 ![CRPS score](./figures/curve_crps.png)
 
