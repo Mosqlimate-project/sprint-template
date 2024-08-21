@@ -66,7 +66,7 @@ The models were ranked according to each score, that is, each model received ran
 (...)
 
 
-# Results of the score of the models
+# Results
 
 Teams and model_id na plataforma: 
 
