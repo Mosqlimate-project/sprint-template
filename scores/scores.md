@@ -61,7 +61,7 @@ For each year and state, the models were assessed according to the six scores li
 |S6                |Interval Score  | 26        |
 
 
-The models were ranked according to each score, that is, each model will receive a Rank R1, R2, …, R6, for each year and state. Finally, the final ranking RYS of the models were be calculated with the following formula, for each year and state:
+The models were ranked according to each score, that is, each model received rank R1, R2, …, R6, for each year and state. Finally, the final ranking RYS of the models were calculated with the following formula, for each year and state:
 
 (...)
 
