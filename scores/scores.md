@@ -10,7 +10,7 @@ Seven teams participating in the Dengue 2024 Sprint submiting several models to 
 6. Ki-Dengu Peppa - Weekly and yearly (iid) components and Weekly and yearly (rw1) components Models
 7. DS_OKSTATE - Info dengue CNN LSTM Ensemble Model
 
-All teams used the tools for visualization and data provided by Mosqlimate platform for tracking arbovirus forecasting experiments:
+All teams used tools for visualization and data provided by Mosqlimate platform for tracking arbovirus forecasting experiments:
 • climatic, demographic and case open datasets: https://api.mosqlimate.org/datastore/
 • Model Registry: https://api.mosqlimate.org/models/
 • Visualization tools: https://api.mosqlimate.org/vis/dashboard
@@ -27,9 +27,7 @@ The logarithmic score, CRP1 and the interval score were computed using the `scor
 
 The CRPS is computed using the equation below:
 
-$$
-CRPS(\mathcal{N}(\mu_i, \sigma^2_i), y_i) = \sigma_i \left\{ \omega_i[\Phi(\omega_i) - 1] + 2\phi(\omega_i) - \frac{1}{\sqrt{\pi}}\right\},
-$$
+(...)
 
 where $\Phi(\omega_i)$ and $\phi(\omega_i)$ is the cumulative distribution function (CDF) and the probability density function (PDF) of the standard normal distribution, respectively, evaluated at the normalized prediction error $\omega_i = \cfrac{y_i - \mu_i}{\sigma_i}$. Additionally, $y_i$ represents the cases observed in week $i$, $i$ is the mean forecasted value in week $i$ and $\sigma_i$ is the standard deviation of the forecast on week $i$.
 
@@ -50,8 +48,21 @@ where $I$ is the indicator function, $\alpha$ the significance level of the inte
 Other metrics were calculated as additional feedback for the teams, without affecting the classification of the models, such as (i) average scores in these regions of interest in the prediction window, considering epidemic onset (weeks between growth start and the peak) and epidemic peak (3 week window centered on the peak) and (ii) the time lag, maximizing cross-correlation between forecasts and data
  
 ## Ranking
-For each year and state, the models will be assessed according to the six scores listed in the
-table below.
+For each year and state, the models will be assessed according to the six scores listed in the table below.
+| Average Score S* | Score (S) used | Final Week|
+| -----------------| ---------------|-----------|
+|𝑆1                |CRPS            | 52        |
+|𝑆2                |CRPS            | 26        |
+|𝑆3                |Log Score       | 52        |
+|𝑆4                |Log Score       | 26        | 
+|S5                |Interval Score  | 52        |
+|S6                |Interval Score  | 26        |
+
+
+The models were ranked according to each score, that is, each model will receive a Rank R1, R2, …, R6, for each year and state. Finally, the final ranking RYS of the models were be calculated with the following formula, for each year and state:
+
+(...)
+
 
 # Results of the score of the models
 
