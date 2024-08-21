@@ -1,10 +1,10 @@
 # Background
-The Mosqlimate group evaluated the performance of each model using a set of scores. The logarithmic score, CRPS and the interval score were computed using the 'ScoringRules Python package'. Other metrics were calculated as additional feedback for the teams, without affecting the classification of the models, such as (i) average scores in these regions of interest in the prediction window, considering epidemic onset (weeks between growth start and the peak) and epidemic peak (3 week window centered on the peak) and (ii) the time lag, maximizing cross-correlation between forecasts and data
+The Mosqlimate group evaluated the performance of each model using a set of scores. The logarithmic score, CRPS and the interval score were computed using the 'ScoringRules Python package'. Other metrics were calculated as additional feedback for the teams, without affecting the classification of the models. These metrics included (i) average scores in specific parts of the prediction window, considering epidemic onset (weeks between growth start and the peak) and epidemic peak (3-week window centered on the peak) and (ii) the time lag which maximizes the cross-correlation between forecasts and data.
 
-Seven teams participating in the Dengue 2024 Sprint submiting several models to dengue prediction using a variety of approaches:
+Seven teams participated in the Dengue 2024 Sprint. They submited dengue predictions using a variety of modeling approaches:
 1. D-fense -
 2. Dobby Data - LTSH model
-3. GeoHealth - Prophet model with PCA and vaiance threshold and LSTM model with PCA and vaiance threshold Models
+3. GeoHealth - Prophet model with PCA and variance threshold and LSTM model with PCA and vaiance threshold Models
 4. Global Health Resilience - Temp-SPI Interaction Model
 5. PET - BB-M Model
 6. Ki-Dengu Peppa - Weekly and yearly (iid) components and Weekly and yearly (rw1) components Models
