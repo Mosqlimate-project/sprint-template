@@ -22,7 +22,7 @@ After finalizing models the submitting forecasts for 2022-2023 and 2023-2024 tra
 
 # Evaluation Methods
 
-## Model Score
+## Scores
 The logarithmic score, CRP1 and the interval score were computed using the `scoringrules3` Python package. 
 
 The CRPS is computed using the equation below:
