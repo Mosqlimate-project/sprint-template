@@ -134,10 +134,10 @@ The figures in this section are generated in the `compare_the_scores_figures.ipy
 
 ![CRPS score](./figures/curve_crps.png)
 
-The Figure below represents the Log score by model and state: 
+The Figure below presents the Log score by model and state: 
 
 ![CRPS score](./figures/curve_log_score.png)
 
-The Figure below represents the interval score by model and state: 
+The Figure below presents the interval score by model and state: 
 
 ![CRPS score](./figures/curve_interval_score.png)
