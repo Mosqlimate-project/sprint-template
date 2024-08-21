@@ -68,7 +68,7 @@ The models were ranked according to each score, that is, each model received ran
 
 # Results
 
-Teams and model_id na plataforma: 
+Table below shows the teams and their corresponding model_ids: 
 
 
 | Team                     | Model id |
@@ -83,10 +83,7 @@ Teams and model_id na plataforma:
  
  * Since the GeoHealth team provided 8 predictions using model 25 and 2 using model 26, and each model made predictions for diferent states, to have consistency in the table legends and figures below, we refer to model 26 as model 25 in the cases it was used.
 
-## Scores for teams
-
-
-### Ranking 
+## Ranking 
 
 The figures in this section are generated in the `Apply_the_score_to_predictions.ipynb` notebook. 
 
@@ -123,11 +120,13 @@ For MG:
 | ![MG - 2023](./figures/ranking_MG_2023.png) | ![MG - 2024](./figures/ranking_MG_2024.png) |
 
 
-Global rank based on the rank of each mandatory state: 
+The overall rank based on the rank for each mandatory state: 
 
 ![Global](./figures/ranking_global.png)
 
 # Conclusion
+
+
 
 # Plots of scores 
 
