@@ -27,7 +27,9 @@ The logarithmic score, CRP1 and the interval score were computed using the `scor
 
 The CRPS is computed using the equation below:
 
-(...)
+$$
+CRPS(\mathcal{N}(\mu_i, \sigma^2_i), y_i) = \sigma_i \left\{ \omega_i[\Phi(\omega_i) - 1] + 2\phi(\omega_i) - \frac{1}{\sqrt{\pi}}\right\},
+$$
 
 where $\Phi(\omega_i)$ and $\phi(\omega_i)$ is the cumulative distribution function (CDF) and the probability density function (PDF) of the standard normal distribution, respectively, evaluated at the normalized prediction error $\omega_i = \cfrac{y_i - \mu_i}{\sigma_i}$. Additionally, $y_i$ represents the cases observed in week $i$, $i$ is the mean forecasted value in week $i$ and $\sigma_i$ is the standard deviation of the forecast on week $i$.
 
