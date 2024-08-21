@@ -132,6 +132,9 @@ Global rank based on the rank of each mandatory state using only the metrics CRP
 ![Global](./figures/ranking_peak_global.png)
 
 The table above was created using the notebook `Apply_the_score_peaks.ipynb`
+# Conclusion
+
+# Plots of scores 
 
 The Figure below represents the CRPS score by model and state: 
 
