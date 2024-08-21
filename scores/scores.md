@@ -127,6 +127,11 @@ Global rank based on the rank of each mandatory state:
 
 ![Global](./figures/ranking_global.png)
 
+Global rank based on the rank of each mandatory state using only the metrics CRPS, Log Score, and  Interval Score in  a 3 week window centered on the peak: 
+
+![Global](./figures/ranking_peak_global.png)
+
+The table above was created using the notebook `Apply_the_score_peaks.ipynb`
 
 The Figure below represents the CRPS score by model and state: 
 
