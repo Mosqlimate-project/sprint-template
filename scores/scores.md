@@ -9,7 +9,7 @@ Teams and model_id na plataforma:
 | Dobby Data               | 21            |
 | GeoHealth                | 25,26*        |
 | Global Health Resilience | 22            |
-| bb-m                     | 30            |
+| BB-M                     | 30            |
 | Ki-Dengu Peppa           | 27, 28        |
 | DS_OKSTATE               | 29            |
  
