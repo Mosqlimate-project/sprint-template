@@ -127,6 +127,9 @@ Global rank based on the rank of each mandatory state:
 
 ![Global](./figures/ranking_global.png)
 
+# Conclusion
+
+# Plots of scores 
 
 The Figure below represents the CRPS score by model and state: 
 
