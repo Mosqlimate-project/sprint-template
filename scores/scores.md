@@ -20,6 +20,8 @@ Teams and model_id na plataforma:
 
 ### Ranking 
 
+The figures in this section are generated in the `compare_the_scores_figures.ipynb` notebook. 
+
 For AM: 
 
 | AM - 2023 | AM - 2024 |
