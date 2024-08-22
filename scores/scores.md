@@ -109,16 +109,28 @@ Table below shows the teams and their corresponding model id:
 
 The plots below show the predicted and observed epidemic curves for the two years: 2022 and 2023.
 
-**colocar plot aqui**
-
 
 ## Scoring
 
-The scores of each model were calculated separately for year 2022 and 2023:
+The scores of each model were calculated weekly. 
 
-**colocar aqui a tabela com os valores dos scores de cada modelo**
+### CRPS score
+The Figure below represents the CRPS score by model and state. **Lower is better**: 
 
-The weekly scores is found at the end of this report
+The figures in this section are generated in the `compare_the_scores_figures.ipynb` notebook. 
+
+![CRPS score](./figures/curve_crps.png)
+
+### Log score
+The Figure below presents the Log score by model and state. **Lower is better**: 
+
+![log_ score](./figures/curve_log_score.png)
+
+### Interval score
+The Figure below presents the interval score by model and state. **Lower is better**: 
+
+![CRPS score](./figures/curve_interval_score.png)
+
 
 ## Ranking 
 
@@ -179,19 +191,3 @@ The table above was created using the notebook `Apply_the_score_peaks.ipynb`
 
 **to do**
 
-### CRPS score
-The Figure below represents the CRPS score by model and state. **Lower is better**: 
-
-The figures in this section are generated in the `compare_the_scores_figures.ipynb` notebook. 
-
-![CRPS score](./figures/curve_crps.png)
-
-### Log score
-The Figure below presents the Log score by model and state. **Lower is better**: 
-
-![log_ score](./figures/curve_log_score.png)
-
-### Interval score
-The Figure below presents the interval score by model and state. **Lower is better**: 
-
-![CRPS score](./figures/curve_interval_score.png)
