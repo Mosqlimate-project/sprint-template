@@ -3,12 +3,12 @@ The Mosqlimate group evaluated the performance of each model using a set of scor
 
 Seven teams participated in the Dengue 2024 Sprint. They submited dengue predictions using a variety of modeling approaches:
 1. D-fense -
-2. Dobby Data - LTSH model
-3. GeoHealth - Prophet model with PCA and variance threshold and LSTM model with PCA and vaiance threshold Models
-4. Global Health Resilience - Temp-SPI Interaction Model
-5. PET - BB-M Model
-6. Ki-Dengu Peppa - Weekly and yearly (iid) components and Weekly and yearly (rw1) components Models
-7. DS_OKSTATE - Info dengue CNN LSTM Ensemble Model
+2. [Dobby Data](https://github.com/eduardocorrearaujo/lstm_transf_to_state) - LTSM model
+3. [GeoHealth](https://github.com/ChenXiang1998/Infodengue-Sprint/tree/main/model) - Prophet model with PCA and variance threshold and LSTM model with PCA and vaiance threshold Models
+4. [Global Health Resilience](https://github.com/giovemoiran/infodengue-sprint-lsl) - Temp-SPI Interaction Model
+5. [BB-M](https://github.com/lsbastos/bb-m) - Bayesian baseline random effects model
+6. [Ki-Dengu Peppa](https://github.com/Mosqlimate-project/kidenguPeppa) - Weekly and yearly (iid) components and Weekly and yearly (rw1) components Models
+7. [DS_OKSTATE](https://github.com/haridas-das/DS_OKSTATE) - Info dengue CNN LSTM Ensemble Model
 
 All teams used tools for visualization and data provided by the Mosqlimate platform for comparing arbovirus forecasting experiments:
 • climatic, demographic and case open datasets: https://api.mosqlimate.org/datastore/
@@ -23,7 +23,7 @@ After finalizing models the submitting forecasts for 2022-2023 and 2023-2024 tra
 # Evaluation Methods
 
 ## Scores
-The logarithmic score, CRP1 and the interval score were computed using the `scoringrules3` Python package. 
+The logarithmic score, CRPS and interval score were calculated using the Python package [mosqlient](https://github.com/Mosqlimate-project/mosqlimate-client/tree/main) which captures the predictions from the API and compares them using some scores implemented in the Python package `scoringrules`. 
 
 The CRPS is computed using the equation below:
 
@@ -61,10 +61,12 @@ For each year and state, the models were assessed according to the six scores li
 |S6                |Interval Score  | 26        |
 
 
-The models were ranked according to each score, that is, each model received rank R1, R2, …, R6, for each year and state. Finally, the final ranking RYS of the models were calculated with the following formula, for each year and state:
+The models were ranked according to each score, that is, each model received rank $R_1$, $R_2$, …, $R_6$, for each year and state. Finally, the final ranking $R_{Y,S}$ (column `composite_rank`)of the models were calculated with the following formula, for each **year** and **state**:
+$$R_{Y,S} = \sum^{6}_{i=1} = \cfrac{1}{R_i}$$
 
-(...)
-
+The global ranking (colum `global_rank`) were calculated for each **year** using the equation below: 
+$$R_Y = \sum^{5}_{S=1} = \cfrac{1}{R_{Y, S}}, S = 1, \ldots, 5,$$
+where each $S$ value represent one of the mandatory states. 
 
 # Results
 
@@ -81,7 +83,7 @@ Table below shows the teams and their corresponding model_ids:
 | Ki-Dengu Peppa           | 27, 28        |
 | DS_OKSTATE               | 29            |
  
- * Since the GeoHealth team provided 8 predictions using model 25 and 2 using model 26, and each model made predictions for diferent states, to have consistency in the table legends and figures below, we refer to model 26 as model 25 in the cases it was used.
+ * Since the GeoHealth team provided 8 predictions using model 25 and 2 using model 26, and each model made predictions for diferent states, to have consistency in the table legends and figures below, we refer to model 25, and 26 as GeoHealth in the tables and Figures.
 
 ## Ranking 
 
@@ -120,13 +122,20 @@ For MG:
 | ![MG - 2023](./figures/ranking_MG_2023.png) | ![MG - 2024](./figures/ranking_MG_2024.png) |
 
 
-The global rank for each mandatory state is: 
+The global rank for each mandatory state and year is: 
 
-![Global](./figures/ranking_global.png)
+| Global - 2023 | Global - 2024 |
+|--------|--------|
+| ![Global - 2023](./figures/ranking_global_2023.png) | ![Global - 2024](./figures/ranking_global_2024.png) |
 
-Global rank based on the rank of each mandatory state using only the metrics CRPS, Log Score, and  Interval Score in  a 3 week window centered on the peak: 
 
-![Global](./figures/ranking_peak_global.png)
+
+The overall rating was also calculated in a 3-week window centered on the peak. In this case, the ranking is calculated based on just 3 scores: CRPS, Record score and Interval score, but the logic used remains the same.  
+
+| Global (peak) - 2023 | Global (peak) - 2024 |
+|--------|--------|
+| ![Global (peak) - 2023](./figures/ranking_peak_global_2023.png) | ![Global (peak) - 2024](./figures/ranking_peak_global_2024.png) |
+
 
 The table above was created using the notebook `Apply_the_score_peaks.ipynb`
 # Conclusion
