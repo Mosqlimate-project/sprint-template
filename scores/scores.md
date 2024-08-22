@@ -1,5 +1,5 @@
 ## Teams and models 
-The Mosqlimate group evaluated the performance of each model using a set of scores. The logarithmic score, CRPS and the interval score were computed using the 'ScoringRules Python package'. Other metrics were calculated as additional feedback for the teams, without affecting the classification of the models. These metrics included (i) average scores in specific parts of the prediction window, considering epidemic onset (weeks between growth start and the peak) and epidemic peak (3-week window centered on the peak) and (ii) the time lag which maximizes the cross-correlation between forecasts and data.
+The Mosqlimate group assessed the performance of each model using a set of scores, over the entire prediction window. The logarithmic score, CRPS and the interval score were computed using the 'ScoringRules Python package'. Other metrics were also  calculated as additional feedback for the teams, but do not enter the composition of the various ranking of the models. These additional metrics include (i) average scores in specific parts of the prediction window, considering epidemic onset (weeks between growth start and the peak) and epidemic peak (3-week window centered on the peak) and (ii) the time lag which maximizes the cross-correlation between forecasts and data.
 
 Seven teams participated in the Dengue 2024 Sprint. They submited dengue predictions using a variety of modeling approaches:
 
@@ -13,39 +13,35 @@ Seven teams participated in the Dengue 2024 Sprint. They submited dengue predict
 
 
 
-
-All teams used tools for visualization and data provided by the Mosqlimate platform for comparing arbovirus forecasting experiments:
+All teams' forecats can be visualized and compared in the Mosqlimate platform for comparing arbovirus forecasting experiments:
 • climatic, demographic and case open datasets: https://api.mosqlimate.org/datastore/
 
 • Model Registry: https://api.mosqlimate.org/models/
 
 • Visualization tools: https://api.mosqlimate.org/vis/dashboard
 
-After finalizing models the submitting forecasts for 2022-2023 and 2023-2024 training seasons 
+All teams submitted forecasts for the 2022-2023 and 2023-2024 seasons for the states of Amazonas (AM), Ceará (CE), Goiás (GO), Minas Gerais (MG), and Paraná (PR).
 
-As a result of the challenge, two methods were selected for building the ensemble models. The criteria applied was their ability to combine the strengths of different types of models. Models were added to the set incrementally, following the score, until no further performance improvements were observed.
-
-# Evaluation Methods
-The Mosqlimate group evaluated the performance of each model using a set of scores. The logarithmic score, CRPS and the interval score were computed using the 'ScoringRules Python package'. Other metrics were calculated as additional feedback for the teams, without affecting the classification of the models. These metrics included (i) average scores in specific parts of the prediction window, considering epidemic onset (weeks between growth start and the peak) and epidemic peak (3-week window centered on the peak) and (ii) the time lag which maximizes the cross-correlation between forecasts and data.
+# Scoring and Ranking
 
 ## Scores
 The logarithmic score, CRPS and interval score were calculated using the Python package [mosqlient](https://github.com/Mosqlimate-project/mosqlimate-client/tree/main) which captures the predictions from the API and compares them using some scores implemented in the Python package `scoringrules`. 
 
-The CRPS is computed using the equation below:
+The *CRPS* was computed using the equation below:
 
 $$
-CRPS(\mathcal{N}(\mu_i, \sigma^2_i), y_i) = \sigma_i { \omega_i[\Phi(\omega_i) - 1] + 2\phi(\omega_i) - \frac{1}{\sqrt{\pi}}},
+CRPS(\mathcal{N}(\mu_i, \sigma^2_i), y_i) = \sigma_i \{ \omega_i[\Phi(\omega_i) - 1] + 2\phi(\omega_i) - \frac{1}{\sqrt{\pi}}\},
 $$
 
 where $\Phi(\omega_i)$ and $\phi(\omega_i)$ is the cumulative distribution function (CDF) and the probability density function (PDF) of the standard normal distribution, respectively, evaluated at the normalized prediction error $\omega_i = \cfrac{y_i - \mu_i}{\sigma_i}$. Additionally, $y_i$ represents the cases observed in week $i$, $i$ is the mean forecasted value in week $i$ and $\sigma_i$ is the standard deviation of the forecast on week $i$.
 
-The Log score is computed using the formula below: 
+The *Log score* was computed using the formula below: 
 
 $$
 LogS(\mathcal{N}(\mu_i, \sigma^2_i), y_i) = log\left( \cfrac{\phi(\omega_i)}{\sigma_i}\right)
 $$
 
-The Interval score is computed using the formula below: 
+The *Interval score* was computed using the formula below: 
 
 $$
 S^{int}_\alpha(l_i, u_i; y_i) = u_i - l_i + \cfrac{2}{\alpha}(l_i - y_i)I\{y_i < l_i\} + \cfrac{2}{\alpha}(y_i - u_i)I\{y_i > u_i\}
