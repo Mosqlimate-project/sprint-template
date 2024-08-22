@@ -118,7 +118,7 @@ The scores of each model were calculated separately for year 2022 and 2023:
 
 **colocar aqui a tabela com os valores dos scores de cada modelo**
 
-The weekly scores is found at the end of this reporst
+The weekly scores is found at the end of this report
 
 ## Ranking 
 
