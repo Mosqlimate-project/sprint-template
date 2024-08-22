@@ -1,6 +1,3 @@
-# Background
-As a result of the challenge, two methods were selected for building the ensemble models. The criteria applied was their ability to combine the strengths of different types of models. Models were added to the set incrementally, following the score, until no further performance improvements were observed.
-
 ## Teams and models 
 Seven teams participated in the Dengue 2024 Sprint. They submitted dengue predictions using a variety of modeling approaches, as presented below:
 
@@ -23,10 +20,9 @@ All teams used tools for visualization and data provided by the Mosqlimate platf
 
 • Visualization tools: https://api.mosqlimate.org/vis/dashboard
 
-
-XX teams used climate data, XX used serotype data, and X used additional data on e.g global climate provided by the team itself. 
-
 After finalizing models the submitting forecasts for 2022-2023 and 2023-2024 training seasons 
+
+As a result of the challenge, two methods were selected for building the ensemble models. The criteria applied was their ability to combine the strengths of different types of models. Models were added to the set incrementally, following the score, until no further performance improvements were observed.
 
 # Evaluation Methods
 The Mosqlimate group evaluated the performance of each model using a set of scores. The logarithmic score, CRPS and the interval score were computed using the 'ScoringRules Python package'. Other metrics were calculated as additional feedback for the teams, without affecting the classification of the models. These metrics included (i) average scores in specific parts of the prediction window, considering epidemic onset (weeks between growth start and the peak) and epidemic peak (3-week window centered on the peak) and (ii) the time lag which maximizes the cross-correlation between forecasts and data.
