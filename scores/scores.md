@@ -1,26 +1,35 @@
 # Background
-The Mosqlimate group evaluated the performance of each model using a set of scores. The logarithmic score, CRPS and the interval score were computed using the 'ScoringRules Python package'. Other metrics were calculated as additional feedback for the teams, without affecting the classification of the models. These metrics included (i) average scores in specific parts of the prediction window, considering epidemic onset (weeks between growth start and the peak) and epidemic peak (3-week window centered on the peak) and (ii) the time lag which maximizes the cross-correlation between forecasts and data.
+As a result of the challenge, two methods were selected for building the ensemble models. The criteria applied was their ability to combine the strengths of different types of models. Models were added to the set incrementally, following the score, until no further performance improvements were observed.
 
-Seven teams participated in the Dengue 2024 Sprint. They submited dengue predictions using a variety of modeling approaches:
-1. D-fense -
-2. Dobby Data - LTSH model
-3. GeoHealth - Prophet model with PCA and variance threshold and LSTM model with PCA and vaiance threshold Models
-4. Global Health Resilience - Temp-SPI Interaction Model
-5. PET - BB-M Model
-6. Ki-Dengu Peppa - Weekly and yearly (iid) components and Weekly and yearly (rw1) components Models
-7. DS_OKSTATE - Info dengue CNN LSTM Ensemble Model
+## Teams and models 
+Seven teams participated in the Dengue 2024 Sprint. They submitted dengue predictions using a variety of modeling approaches, as presented below:
+
+| Team                     | Model id | Aproache and reference     |
+| ------------------------ | -------- |--------------------------- |
+| D-fense                  | ---------|--------------------------- |
+| Dobby Data               | 21   |[LTSH model](https://github.com/eduardocorrearaujo/lstm_transf_to_state)|
+| Global Health Resilience | 22   |[Temp-SPI Interaction Model](https://github.com/giovemoiran/infodengue-sprint-lsl)|
+| GeoHealth                | 25, 26 |[Prophet and LTSM PCA variance threshold models](https://github.com/ChenXiang1998/Infodengue-Sprint/tree/main/model)|
+| Ki-Dengu Peppa           | 27, 28 |[Weekly and yearly (iid) and Weekly and yearly (rw1) components Models](https://github.com/Mosqlimate-project/kidenguPeppa)|
+| DS_OKSTATE               | 29   |[Info dengue CNN LSTM Ensemble Model](https://github.com/haridas-das/DS_OKSTATE)|
+| PET                      | 30   |[Bayesian baseline random effects model - BB-M](https://github.com/lsbastos/bb-m)|
+
 
 All teams used tools for visualization and data provided by the Mosqlimate platform for comparing arbovirus forecasting experiments:
+
 • climatic, demographic and case open datasets: https://api.mosqlimate.org/datastore/
+
 • Model Registry: https://api.mosqlimate.org/models/
+
 • Visualization tools: https://api.mosqlimate.org/vis/dashboard
-• Forecast scoring tools: logarithmic score, CRPS and the interval score
+
 
 XX teams used climate data, XX used serotype data, and X used additional data on e.g global climate provided by the team itself. 
 
 After finalizing models the submitting forecasts for 2022-2023 and 2023-2024 training seasons 
 
 # Evaluation Methods
+The Mosqlimate group evaluated the performance of each model using a set of scores. The logarithmic score, CRPS and the interval score were computed using the 'ScoringRules Python package'. Other metrics were calculated as additional feedback for the teams, without affecting the classification of the models. These metrics included (i) average scores in specific parts of the prediction window, considering epidemic onset (weeks between growth start and the peak) and epidemic peak (3-week window centered on the peak) and (ii) the time lag which maximizes the cross-correlation between forecasts and data.
 
 ## Scores
 The logarithmic score, CRP1 and the interval score were computed using the `scoringrules3` Python package. 
@@ -47,7 +56,10 @@ $$
 
 where $I$ is the indicator function, $\alpha$ the significance level of the interval, $u_i$ the upper value of the interval at week $i$ and $l_i$ the lower value. 
 
-Other metrics were calculated as additional feedback for the teams, without affecting the classification of the models, such as (i) average scores in these regions of interest in the prediction window, considering epidemic onset (weeks between growth start and the peak) and epidemic peak (3 week window centered on the peak) and (ii) the time lag, maximizing cross-correlation between forecasts and data
+
+## Other metrics
+Other metrics were calculated as additional feedback for the teams, without affecting the classification of the models, such as (i) average scores in these regions of interest in the prediction window, considering epidemic onset (weeks between growth start and the peak) and epidemic peak (3 week window centered on the peak) and (ii) the time lag, maximizing cross-correlation between forecasts and data.
+
  
 ## Ranking
 For each year and state, the models were assessed according to the six scores listed in the table below.
@@ -60,15 +72,31 @@ For each year and state, the models were assessed according to the six scores li
 |S5                |Interval Score  | 52        |
 |S6                |Interval Score  | 26        |
 
+where S* is given by the follow equation:
 
-The models were ranked according to each score, that is, each model received rank R1, R2, …, R6, for each year and state. Finally, the final ranking RYS of the models were calculated with the following formula, for each year and state:
+$$
+\[S = \frac{1}{W_f}\sum_{i}^{W_f} S_i\]
+$$
 
-(...)
+The models were ranked according to each score, that is, each model received rank R1, R2, …, R6, for each year and state. Finally, the final ranking R<sub>YS</sub> of the models were calculated for each year and state, given by:
 
+$$
+\[ R_{Y,S} = \sum_{x=1}^6 \frac{1}{R_i}\]
+$$
+
+A global ranking was calculated using a similar method
+
+## Ensemble
+
+Voting regressor
+A voting regressor is a meta estimator that takes the average or weighted averages of the forecasts produced by all the models in the ensemble. When using a weighted average, various weighting schemes will be explored to optimize the ensemble's performance.
+
+Stacking regressor
+The Stacking regressor is similar to the Voting regressor, with the difference that it combines the individual forecasts using a regression model specified. This final estimator is trained using cross-validation.
 
 # Results
 
-Table below shows the teams and their corresponding model_ids: 
+Table below shows the teams and their corresponding model id: 
 
 
 | Team                     | Model id |
