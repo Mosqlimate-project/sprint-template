@@ -69,6 +69,7 @@ For each year and state, the models were assessed according to the six scores li
 where S* is given by the follow equation:
 
 The models were ranked according to each score, that is, each model received rank $R_1$, $R_2$, …, $R_6$, for each year and state. Finally, the final ranking $R_{Y,S}$ (column `composite_rank`)of the models were calculated with the following formula, for each **year** and **state**:
+
 $$
 S = \frac{1}{W_f}\sum_{i}^{W_f} S_i
 $$
