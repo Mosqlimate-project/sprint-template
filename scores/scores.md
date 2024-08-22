@@ -78,11 +78,13 @@ $$
 R_{Y,S} = \sum^{6}_{i=1} = \cfrac{1}{R_i}
 $$
 
-The global ranking (colum `global_rank`) were calculated for each **year** using the equation below: 
+The global ranking (colum `global_rank`) were calculated for each **year** and **state** using the equation below: 
 
 $$
 R_{Y,S} = \sum_{x=1}^6 \frac{1}{R_i}
 $$
+
+And globally by **year**:
 
 $$
 R_Y = \sum^{5}_{S=1} = \cfrac{1}{R_{Y, S}}, S = 1, ..., 5,
