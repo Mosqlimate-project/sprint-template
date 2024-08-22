@@ -84,11 +84,9 @@ A global ranking was calculated using a similar method
 
 ## Ensemble
 
-Voting regressor
-A voting regressor is a meta estimator that takes the average or weighted averages of the forecasts produced by all the models in the ensemble. When using a weighted average, various weighting schemes will be explored to optimize the ensemble's performance.
+**Voting regressor**: The voting regressor is a meta estimator that takes the average or weighted averages of the forecasts produced by all the models in the ensemble. When using a weighted average, various weighting schemes will be explored to optimize the ensemble's performance.
 
-Stacking regressor
-The Stacking regressor is similar to the Voting regressor, with the difference that it combines the individual forecasts using a regression model specified. This final estimator is trained using cross-validation.
+**Stacking regressor**: The Stacking regressor is similar to the Voting regressor, with the difference that it combines the individual forecasts using a regression model specified. This final estimator is trained using cross-validation.
 
 # Results
 
