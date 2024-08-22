@@ -84,7 +84,7 @@ where each $S$ value represent one of the mandatory states.
 The global ranking (colum `global_rank`) were calculated for each **year**  using the equation below
 
 $$
-R_Y = \sum^{5}_{S=1} = \frac{1}{R_{Y, S}}, S = 1, ..., 5,
+R_Y = \sum^{6}_{S=1} \frac{1}{R_{Y, S}}, Y \in \{2023, 2024\},
 $$
  
 
