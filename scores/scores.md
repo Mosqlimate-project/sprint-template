@@ -13,7 +13,6 @@ Seven teams participated in the Dengue 2024 Sprint. They submited dengue predict
 
 
 
-All teams used tools for visualization and data provided by the Mosqlimate platform for comparing arbovirus forecasting experiments:
 
 All teams used tools for visualization and data provided by the Mosqlimate platform for comparing arbovirus forecasting experiments:
 • climatic, demographic and case open datasets: https://api.mosqlimate.org/datastore/
