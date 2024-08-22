@@ -90,17 +90,16 @@ The global ranking (colum `global_rank`) were calculated for each **year**  usin
 # Results
 
 Table below shows the teams and their corresponding model id: 
+| Team                     | Model id | Approach and reference     |
+| ------------------------ | -------- |--------------------------- |
+| D-fense                  | ---------|--------------------------- |
+| Dobby Data               | 21   |[LTSH model](https://github.com/eduardocorrearaujo/lstm_transf_to_state)|
+| Global Health Resilience | 22   |[Temp-SPI Interaction Model](https://github.com/giovemoiran/infodengue-sprint-lsl)|
+| GeoHealth                | 25, 26 |[Prophet and LTSM PCA variance threshold models](https://github.com/ChenXiang1998/Infodengue-Sprint/tree/main/model)|
+| Ki-Dengu Peppa           | 27, 28 |[Weekly and yearly (iid) and Weekly and yearly (rw1) components Models](https://github.com/Mosqlimate-project/kidenguPeppa)|
+| DS_OKSTATE               | 29   |[Info dengue CNN LSTM Ensemble Model](https://github.com/haridas-das/DS_OKSTATE)|
+| PET                      | 30   |[Bayesian baseline random effects model - BB-M](https://github.com/lsbastos/bb-m)|
 
-
-| Team                     | Model id |
-| ------------------------ | ------------- |
-| D-fense                  | ------------  |
-| Dobby Data               | 21            |
-| GeoHealth                | 25,26*        |
-| Global Health Resilience | 22            |
-| BB-M                     | 30            |
-| Ki-Dengu Peppa           | 27, 28        |
-| DS_OKSTATE               | 29            |
  
  * Since the GeoHealth team provided 8 predictions using model 25 and 2 using model 26, and each model made predictions for diferent states, to have consistency in the table legends and figures below, we refer to model 25, and 26 as GeoHealth in the tables and Figures.
 
