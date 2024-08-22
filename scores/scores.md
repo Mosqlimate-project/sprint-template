@@ -87,10 +87,6 @@ R_Y = \sum^{5}_{S=1} = \cfrac{1}{R_{Y, S}}, S = 1, ..., 5,
 $$
 where each $S$ value represent one of the mandatory states. 
 
-# Results
-
-Table below shows the teams and their corresponding model_ids: 
-
 
 # Results
 
@@ -108,6 +104,21 @@ Table below shows the teams and their corresponding model id:
 | DS_OKSTATE               | 29            |
  
  * Since the GeoHealth team provided 8 predictions using model 25 and 2 using model 26, and each model made predictions for diferent states, to have consistency in the table legends and figures below, we refer to model 25, and 26 as GeoHealth in the tables and Figures.
+
+## Predicted Curves
+
+The plots below show the predicted and observed epidemic curves for the two years: 2022 and 2023.
+** colocar figuras aqui**
+
+
+## Scoring
+
+The scores of each model were calculated separately for year 2022 and 2023:
+
+** colocar aqui a tabela com os valores dos scores de cada modelo **
+
+The weekly scores is found at the end of this reporst
+
 ## Ranking 
 
 The figures in this section are generated in the `Apply_the_score_to_predictions.ipynb` notebook. 
