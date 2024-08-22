@@ -1,8 +1,7 @@
 ## Teams and models 
-The Mosqlimate group assessed the performance of each model using a set of scores, over the entire prediction window. The logarithmic score, CRPS and the interval score were computed using the 'ScoringRules Python package'. Other metrics were also  calculated as additional feedback for the teams, but do not enter the composition of the various ranking of the models. These additional metrics include (i) average scores in specific parts of the prediction window, considering epidemic onset (weeks between growth start and the peak) and epidemic peak (3-week window centered on the peak) and (ii) the time lag which maximizes the cross-correlation between forecasts and data.
+The Mosqlimate group assessed the performance of each model using a set of scores, over the entire prediction window. The logarithmic score, CRPS and the interval score were computed using the 'ScoringRules Python package'. Other metrics were also  calculated as additional feedback for the teams, but do not enter the composition of the various ranking of the models. These additional metrics include (i) average scores in the epidemic peak (3-week window centered on the peak) and (ii) the time lag which maximizes the cross-correlation between forecasts and data.
 
 Seven teams participated in the Dengue 2024 Sprint. They submited dengue predictions using a variety of modeling approaches:
-
 
 1. [Dobby Data](https://github.com/eduardocorrearaujo/lstm_transf_to_state) - LTSM model
 3. [GeoHealth](https://github.com/ChenXiang1998/Infodengue-Sprint/tree/main/model) - Prophet model with PCA and variance threshold and LSTM model with PCA and variance threshold Models
@@ -12,8 +11,12 @@ Seven teams participated in the Dengue 2024 Sprint. They submited dengue predict
 7. [DS_OKSTATE](https://github.com/haridas-das/DS_OKSTATE) - Info dengue CNN LSTM Ensemble Model
 
 
+<<<<<<< HEAD
 
 All teams' forecast can be visualized and compared in the Mosqlimate platform for comparing arbovirus forecasting experiments:
+=======
+All team's forecasts can be visualized and compared in the Mosqlimate platform for comparing arbovirus forecasting experiments:
+>>>>>>> a40d2cc (Update the figures)
 • climatic, demographic and case open datasets: https://api.mosqlimate.org/datastore/
 
 • Model Registry: https://api.mosqlimate.org/models/
@@ -53,6 +56,7 @@ where $I$ is the indicator function, $\alpha$ the significance level of the inte
 ## Ranking
 For each year and state, the models were assessed according to the six scores listed in the table below.
 
+<<<<<<< HEAD
 | Average Score S* | Score (S) used | Length (Week)|
 | -----------------| ---------------|--------------|
 |𝑆<sub>1</sub>     |CRPS            | 52           |
@@ -61,6 +65,16 @@ For each year and state, the models were assessed according to the six scores li
 |𝑆<sub>4</sub>     |Log Score       | 26           | 
 |S<sub>5</sub>     |Interval Score  | 52           |
 |S<sub>6</sub>     |Interval Score  | 26           | 
+=======
+| Average Score S* | Score (S) used | Evaluated range - test1  | Evaluated range - test2  |
+| -----------------| ---------------|--------------------------|--------------------------|
+|𝑆<sub>1</sub>     |CRPS            |EW41 2022 - EW40 2023     |EW41 2023 - EW23 2024     |
+|𝑆<sub>2</sub>     |CRPS            |EW41 2022 - EW14 2023     |EW41 2023 - EW14 2024     |
+|𝑆<sub>3</sub>     |Log Score       |EW41 2022 - EW40 2023     |EW41 2023 - EW23 2024     |
+|𝑆<sub>4</sub>     |Log Score       |EW41 2022 - EW14 2023     |EW41 2023 - EW14 2024     |
+|S<sub>5</sub>     |Interval Score  |EW41 2022 - EW40 2023     |EW41 2023 - EW23 2024     |
+|S<sub>6</sub>     |Interval Score  |EW41 2022 - EW14 2023     |EW41 2023 - EW14 2024     |
+>>>>>>> a40d2cc (Update the figures)
 
 where S* is given by the follow equation:
 
@@ -94,15 +108,27 @@ Table below shows the teams and their corresponding model id:
 | GeoHealth                | 25, 26 |[Prophet and LTSM PCA variance threshold models](https://github.com/ChenXiang1998/Infodengue-Sprint/tree/main/model)|
 | Ki-Dengu Peppa           | 27, 28 |[Weekly and yearly (iid) and Weekly and yearly (rw1) components Models](https://github.com/Mosqlimate-project/kidenguPeppa)|
 | DS_OKSTATE               | 29   |[Info dengue CNN LSTM Ensemble Model](https://github.com/haridas-das/DS_OKSTATE)|
-| PET                      | 30   |[Bayesian baseline random effects model - BB-M](https://github.com/lsbastos/bb-m)|
+| BB-M                     | 30   |[Bayesian baseline random effects model - BB-M](https://github.com/lsbastos/bb-m)|
 
  
  * Since the GeoHealth team provided 8 predictions using model 25 and 2 using model 26, and each model made predictions for diferent states, to have consistency in the table legends and figures below, we refer to model 25, and 26 as GeoHealth in the tables and Figures.
 
 ## Predicted Curves
 
-The plots below show the predicted and observed epidemic curves for the two years: 2022 and 2023.
+The plots below show the predicted and observed epidemic curves for the two years: 2023 and 2024. The code to generate the plot are available in the notebook `comp_the_predictions.ipynb`.
 
+![Predicted curves](./figures/comp_preds.png)
+
+
+In order to evaluate if the models are able to predict the increasing in 2024 related to 2023 we compute an increase rate (IR) using the peak of cases ($P$) in each year using the equation below: 
+
+$$IR= \cfrac{P_{2024} - P_{2023}}{P_{2023}}$$
+
+The results are in shown table below: 
+
+![Increase rate ](./figures/increase_rate.png)
+
+The negative growth rate for the EC for most of the models may be associated with the fact that most of them overestimated the cases in 2023. 
 
 ## Scoring
 
@@ -168,6 +194,21 @@ The global rank for each mandatory state and year is:
 | Global - 2023 | Global - 2024 |
 |--------|--------|
 | ![Global - 2023](./figures/ranking_global_2023.png) | ![Global - 2024](./figures/ranking_global_2024.png) |
+
+
+### Global ranking using the scores: 𝑆<sub>1</sub> , 𝑆<sub>3</sub> , and 𝑆<sub>5</sub> 
+The global rank for each mandatory state and year is: 
+
+| Global - 2023 | Global - 2024 |
+|--------|--------|
+| ![Global - 2023](./figures/ranking_52_global_2023.png) | ![Global - 2024](./figures/ranking_52_global_2024.png) |
+
+### Global ranking using the scores: 𝑆<sub>2</sub> , 𝑆<sub>4</sub> , and 𝑆<sub>6</sub> 
+The global rank for each mandatory state and year is: 
+
+| Global - 2023 | Global - 2024 |
+|--------|--------|
+| ![Global - 2023](./figures/ranking_26_global_2023.png) | ![Global - 2024](./figures/ranking_26_global_2024.png) |
 
 
 ### Peak accuracy ranking
