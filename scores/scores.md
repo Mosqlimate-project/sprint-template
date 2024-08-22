@@ -70,7 +70,7 @@ $$
 The global ranking (colum `global_rank`) were calculated for each **year** using the equation below: 
 
 $$
-R_Y = \sum^{5}_{S=1} = \cfrac{1}{R_{Y, S}}, S = 1, \ldots, 5,
+R_Y = \sum^{5}_{S=1} = \cfrac{1}{R_{Y, S}}, S = 1, ..., 5,
 $$
 where each $S$ value represent one of the mandatory states. 
 
