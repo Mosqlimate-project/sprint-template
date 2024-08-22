@@ -62,10 +62,16 @@ For each year and state, the models were assessed according to the six scores li
 
 
 The models were ranked according to each score, that is, each model received rank $R_1$, $R_2$, …, $R_6$, for each year and state. Finally, the final ranking $R_{Y,S}$ (column `composite_rank`)of the models were calculated with the following formula, for each **year** and **state**:
-$$R_{Y,S} = \sum^{6}_{i=1} = \cfrac{1}{R_i}$$
+
+$$
+R_{Y,S} = \sum^{6}_{i=1} = \cfrac{1}{R_i}
+$$
 
 The global ranking (colum `global_rank`) were calculated for each **year** using the equation below: 
-$$R_Y = \sum^{5}_{S=1} = \cfrac{1}{R_{Y, S}}, S = 1, \ldots, 5,$$
+
+$$
+R_Y = \sum^{5}_{S=1} = \cfrac{1}{R_{Y, S}}, S = 1, \ldots, 5,
+$$
 where each $S$ value represent one of the mandatory states. 
 
 # Results
