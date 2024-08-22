@@ -108,14 +108,15 @@ Table below shows the teams and their corresponding model id:
 ## Predicted Curves
 
 The plots below show the predicted and observed epidemic curves for the two years: 2022 and 2023.
-** colocar figuras aqui**
+
+**colocar plot aqui**
 
 
 ## Scoring
 
 The scores of each model were calculated separately for year 2022 and 2023:
 
-** colocar aqui a tabela com os valores dos scores de cada modelo **
+**colocar aqui a tabela com os valores dos scores de cada modelo**
 
 The weekly scores is found at the end of this reporst
 
@@ -175,7 +176,8 @@ The overall rating was also calculated in a 3-week window centered on the peak. 
 The table above was created using the notebook `Apply_the_score_peaks.ipynb`
 
 # Conclusion
-## Plots of scores 
+
+**to do**
 
 ### CRPS score
 The Figure below represents the CRPS score by model and state. **Lower is better**: 
