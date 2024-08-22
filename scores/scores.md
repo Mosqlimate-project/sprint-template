@@ -61,12 +61,12 @@ Other metrics were calculated as additional feedback for the teams, without affe
 For each year and state, the models were assessed according to the six scores listed in the table below.
 | Average Score S* | Score (S) used | Final Week|
 | -----------------| ---------------|-----------|
-|𝑆1                |CRPS            | 52        |
-|𝑆2                |CRPS            | 26        |
-|𝑆3                |Log Score       | 52        |
-|𝑆4                |Log Score       | 26        | 
-|S5                |Interval Score  | 52        |
-|S6                |Interval Score  | 26        |
+|𝑆<sub>1</sub>     |CRPS            | 52        |
+|𝑆<sub>2</sub>     |CRPS            | 26        |
+|𝑆<sub>3</sub>     |Log Score       | 52        |
+|𝑆<sub>4</sub>     |Log Score       | 26        | 
+|S<sub>5</sub>     |Interval Score  | 52        |
+|S<sub>6</sub>     |Interval Score  | 26        |
 
 where S* is given by the follow equation:
 
@@ -74,7 +74,7 @@ $$
 \[S = \frac{1}{W_f}\sum_{i}^{W_f} S_i\]
 $$
 
-The models were ranked according to each score, that is, each model received rank R1, R2, …, R6, for each year and state. Finally, the final ranking R<sub>YS</sub> of the models were calculated for each year and state, given by:
+The models were ranked according to each score, that is, each model received rank R1, R2, …, R6, for each year and state. Finally, the final ranking R<sub>Y,S</sub> of the models were calculated for each year and state, given by:
 
 $$
 \[ R_{Y,S} = \sum_{x=1}^6 \frac{1}{R_i}\]
