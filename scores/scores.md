@@ -87,7 +87,7 @@ $$
 R_Y = \sum^{5}_{S=1} \frac{1}{R_{Y, S}}, Y \in \{2023, 2024\}
 $$
  
-<img width="176" alt="eq_global_rank" src="https://github.com/user-attachments/assets/1e59975e-8504-4c0f-9c64-3206d2f6a59e">
+<img width="250" alt="eq_global_rank" src="https://github.com/user-attachments/assets/1e59975e-8504-4c0f-9c64-3206d2f6a59e">
 
 
 # Results
