@@ -5,7 +5,7 @@ Seven teams participated in the Dengue 2024 Sprint. They submited dengue predict
 
 
 1. [Dobby Data](https://github.com/eduardocorrearaujo/lstm_transf_to_state) - LTSM model
-3. [GeoHealth](https://github.com/ChenXiang1998/Infodengue-Sprint/tree/main/model) - Prophet model with PCA and variance threshold and LSTM model with PCA and vaiance threshold Models
+3. [GeoHealth](https://github.com/ChenXiang1998/Infodengue-Sprint/tree/main/model) - Prophet model with PCA and variance threshold and LSTM model with PCA and variance threshold Models
 4. [Global Health Resilience](https://github.com/giovemoiran/infodengue-sprint-lsl) - Temp-SPI Interaction Model
 5. [BB-M](https://github.com/lsbastos/bb-m) - Bayesian baseline random effects model
 6. [Ki-Dengu Peppa](https://github.com/Mosqlimate-project/kidenguPeppa) - Weekly and yearly (iid) components and Weekly and yearly (rw1) components Models
@@ -83,9 +83,6 @@ where each $S$ value represent one of the mandatory states.
 
 The global ranking (colum `global_rank`) were calculated for each **year**  using the equation below
 
-$$
-R_Y = \sum^{5}_{S=1} \frac{1}{R_{Y, S}}, Y \in \{2023, 2024\}
-$$
  
 <img width="250" alt="eq_global_rank" src="https://github.com/user-attachments/assets/1e59975e-8504-4c0f-9c64-3206d2f6a59e">
 
