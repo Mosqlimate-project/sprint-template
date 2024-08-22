@@ -10,7 +10,7 @@ Seven teams participated in the Dengue 2024 Sprint. They submited dengue predict
 5. [BB-M](https://github.com/lsbastos/bb-m) - Bayesian baseline random effects model
 6. [Ki-Dengu Peppa](https://github.com/Mosqlimate-project/kidenguPeppa) - Weekly and yearly (iid) components and Weekly and yearly (rw1) components Models
 7. [DS_OKSTATE](https://github.com/haridas-das/DS_OKSTATE) - Info dengue CNN LSTM Ensemble Model
-| PET                      | 30   |[Bayesian baseline random effects model - BB-M](https://github.com/lsbastos/bb-m)|
+
 
 
 All teams used tools for visualization and data provided by the Mosqlimate platform for comparing arbovirus forecasting experiments:
