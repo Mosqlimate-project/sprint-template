@@ -1,4 +1,4 @@
-model_id,rank_S1,rank_S2,rank_S3,rank_S4,rank_S5,rank_S6,rank_final,state,year
+model_id,rank_S1,rank_S2,rank_S3,rank_S4,rank_S5,rank_S6,composite_rank,state,year
 30,1,2,1,1,1,2,1,CE,2024
 25,2,1,5,3,3,1,2,CE,2024
 22,4,3,2,2,2,3,3,CE,2024
