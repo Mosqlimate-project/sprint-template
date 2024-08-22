@@ -147,7 +147,7 @@ For MG:
 |--------|--------|
 | ![MG - 2023](./figures/ranking_MG_2023.png) | ![MG - 2024](./figures/ranking_MG_2024.png) |
 
-
+### Global ranking
 The global rank for each mandatory state and year is: 
 
 | Global - 2023 | Global - 2024 |
@@ -155,11 +155,7 @@ The global rank for each mandatory state and year is:
 | ![Global - 2023](./figures/ranking_global_2023.png) | ![Global - 2024](./figures/ranking_global_2024.png) |
 
 
-# Conclusion
-
-
-
-# Plots of scores 
+### Peak accuracy ranking
 
 The overall rating was also calculated in a 3-week window centered on the peak. In this case, the ranking is calculated based on just 3 scores: CRPS, Record score and Interval score, but the logic used remains the same.  
 
@@ -169,22 +165,23 @@ The overall rating was also calculated in a 3-week window centered on the peak. 
 
 
 The table above was created using the notebook `Apply_the_score_peaks.ipynb`
+
 # Conclusion
+## Plots of scores 
 
-
-
-# Plots of scores 
-
-The Figure below represents the CRPS score by model and state: 
+### CRPS score
+The Figure below represents the CRPS score by model and state. **Lower is better**: 
 
 The figures in this section are generated in the `compare_the_scores_figures.ipynb` notebook. 
 
 ![CRPS score](./figures/curve_crps.png)
 
-The Figure below presents the Log score by model and state: 
+### Log score
+The Figure below presents the Log score by model and state. **Lower is better**: 
 
-![CRPS score](./figures/curve_log_score.png)
+![log_ score](./figures/curve_log_score.png)
 
-The Figure below presents the interval score by model and state: 
+### Interval score
+The Figure below presents the interval score by model and state. **Lower is better**: 
 
 ![CRPS score](./figures/curve_interval_score.png)
