@@ -2,8 +2,9 @@
 The Mosqlimate group evaluated the performance of each model using a set of scores. The logarithmic score, CRPS and the interval score were computed using the 'ScoringRules Python package'. Other metrics were calculated as additional feedback for the teams, without affecting the classification of the models. These metrics included (i) average scores in specific parts of the prediction window, considering epidemic onset (weeks between growth start and the peak) and epidemic peak (3-week window centered on the peak) and (ii) the time lag which maximizes the cross-correlation between forecasts and data.
 
 Seven teams participated in the Dengue 2024 Sprint. They submited dengue predictions using a variety of modeling approaches:
-| ------------------------ | -------- |--------------------------- |
-2. [Dobby Data](https://github.com/eduardocorrearaujo/lstm_transf_to_state) - LTSM model
+
+
+1. [Dobby Data](https://github.com/eduardocorrearaujo/lstm_transf_to_state) - LTSM model
 3. [GeoHealth](https://github.com/ChenXiang1998/Infodengue-Sprint/tree/main/model) - Prophet model with PCA and variance threshold and LSTM model with PCA and vaiance threshold Models
 4. [Global Health Resilience](https://github.com/giovemoiran/infodengue-sprint-lsl) - Temp-SPI Interaction Model
 5. [BB-M](https://github.com/lsbastos/bb-m) - Bayesian baseline random effects model
@@ -60,6 +61,7 @@ Other metrics were calculated as additional feedback for the teams, without affe
  
 ## Ranking
 For each year and state, the models were assessed according to the six scores listed in the table below.
+
 | Average Score S* | Score (S) used | Final Week|
 | -----------------| ---------------|-----------|
 |𝑆<sub>1</sub>     |CRPS            | 52        |
