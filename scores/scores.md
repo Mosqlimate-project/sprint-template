@@ -1,7 +1,7 @@
 ## Teams and models 
 Seven teams participated in the Dengue 2024 Sprint. They submitted dengue predictions using a variety of modeling approaches, as presented below:
 
-| Team                     | Model id | Aproache and reference     |
+| Team                     | Model id | Approach and reference     |
 | ------------------------ | -------- |--------------------------- |
 | D-fense                  | ---------|--------------------------- |
 | Dobby Data               | 21   |[LTSH model](https://github.com/eduardocorrearaujo/lstm_transf_to_state)|
