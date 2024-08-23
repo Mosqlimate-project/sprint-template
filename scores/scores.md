@@ -20,7 +20,7 @@ All team's forecasts can be visualized and compared in the Mosqlimate platform f
 
 All teams submitted forecasts for the 2022-2023 and 2023-2024 seasons for the states of Amazonas (AM), Ceará (CE), Goiás (GO), Minas Gerais (MG), and Paraná (PR).
 
-## Remember the sprint goals:
+### Remember the sprint goals:
 Provide forecasts for 2025, at state level, by:
 1. Organizing a community of modellers with unified goal and methods - done
 2. Together generate a set of independent models tested using data from previous seasons - done
@@ -62,6 +62,8 @@ where $I$ is the indicator function, $\alpha$ the significance level of the inte
 
 
 ## Ranking
+Individual scores were calculated for each state and each year, corresponding to test 1 and test 2. Based on these scores, the concordance models were classified with different challenges. For each year and state, the models were assessed according the score and the predicted epidemiological week, for each year and state. At the end, a global ranking was calculated. For the emsemble, the models werw added to the set incrementally, following the raking order until there is no further improvement in performance.
+
 For each year and state, the models were assessed according to the six scores listed in the table below.
 
 | Average Score S* | Score (S) used | Evaluated range - test1  | Evaluated range - test2  |
