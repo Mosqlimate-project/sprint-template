@@ -1,5 +1,5 @@
  ## Teams and models 
-The Mosqlimate group assessed the performance of each model using a set of scores. The logarithmic score, CRPS and the interval score were computed using the 'ScoringRules Python package'. Other metrics were also  calculated as additional feedback for the teams, but do not enter the composition of the various ranking of the models. These additional metrics include (i) average scores in the epidemic peak (3-week window centered on the peak) and (ii) the time lag which maximizes the cross-correlation between forecasts and data.
+The Mosqlimate group assessed the performance of each model using a set of scores. The logarithmic score, CRPS and the interval score were computed using the 'ScoringRules Python package'. Other metrics were also  calculated as additional feedback for the teams. These additional metrics include (i) average scores in the epidemic peak (3-week window centered on the peak) and (ii) the time lag which maximizes the cross-correlation between forecasts and data.
 
 Seven teams participated in the Dengue 2024 Sprint. They submited dengue predictions using a variety of modeling approaches:
 
