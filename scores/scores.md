@@ -115,7 +115,7 @@ The results are in shown table below:
 
 ![Increase rate ](./figures/increase_rate.png)
 
-In 2024, all states presented higher dengue peaks than in 2023. In MG and GO, the peaks were three times and five times higher, respectively. In general, the performance of the models was better in XX and worse in GO. We highlight DD model as the only one that predicted increase in all states, and GHR & KDP as the ones that most accurately performed in MG.   
+In 2024, all states presented higher dengue peaks than in 2023. In MG and GO, the peaks were three times and five times higher, respectively. In general, the performance of the models was better in PR and MG where all models predicted an increase in the epidemic peak in 2024. We highlight DD model as the only one that predicted increase in all states, and GHR & KDP as the ones that most accurately performed in MG.    
 
 ## Scoring
 
