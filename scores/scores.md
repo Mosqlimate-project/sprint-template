@@ -127,7 +127,7 @@ The Figure below shows the weekly CRPS score of each model, by state. **Lower is
 ![CRPS score](./figures/curve_crps.png)
 
 ### Log score
-The Figure below presents the weekly Log score by model and state. The Log score was truncated in -100. **Upper is better**: 
+The Figure below presents the weekly Log score by model and state. The Log score was truncated in -100. **Higher is better**: 
 
 ![log_ score](./figures/curve_log_score.png)
 
