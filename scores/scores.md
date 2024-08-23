@@ -50,21 +50,17 @@ $$
 where $I$ is the indicator function, $\alpha$ the significance level of the interval, $u_i$ the upper value of the interval at week $i$ and $l_i$ the lower value. 
 
 
-## Other metrics
-Other metrics were calculated as additional feedback for the teams, without affecting the classification of the models, such as (i) average scores in these regions of interest in the prediction window, considering epidemic onset (weeks between growth start and the peak) and epidemic peak (3 week window centered on the peak) and (ii) the time lag, maximizing cross-correlation between forecasts and data.
-
- 
 ## Ranking
 For each year and state, the models were assessed according to the six scores listed in the table below.
 
-| Average Score S* | Score (S) used | Final Week|
-| -----------------| ---------------|-----------|
-|𝑆<sub>1</sub>     |CRPS            | 52        |
-|𝑆<sub>2</sub>     |CRPS            | 26        |
-|𝑆<sub>3</sub>     |Log Score       | 52        |
-|𝑆<sub>4</sub>     |Log Score       | 26        | 
-|S<sub>5</sub>     |Interval Score  | 52        |
-|S<sub>6</sub>     |Interval Score  | 26        |
+| Average Score S* | Score (S) used | Length (Week)|
+| -----------------| ---------------|--------------|
+|𝑆<sub>1</sub>     |CRPS            | 52           |
+|𝑆<sub>2</sub>     |CRPS            | 26           |
+|𝑆<sub>3</sub>     |Log Score       | 52           |
+|𝑆<sub>4</sub>     |Log Score       | 26           | 
+|S<sub>5</sub>     |Interval Score  | 52           |
+|S<sub>6</sub>     |Interval Score  | 26           | 
 
 where S* is given by the follow equation:
 
