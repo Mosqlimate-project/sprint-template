@@ -10,7 +10,7 @@ Seven teams participated in the Dengue 2024 Sprint. They submited dengue predict
 6. [Ki-Dengu Peppa](https://github.com/Mosqlimate-project/kidenguPeppa) (KDP)- Weekly and yearly (iid) components and Weekly and yearly (rw1) components Models
 7. [DS_OKSTATE](https://github.com/haridas-das/DS_OKSTATE) (OK) - Info dengue CNN LSTM Ensemble Model
 
-All team's forecasts can be visualized and compared in the Mosqlimate platform for comparing arbovirus forecasting experiments:
+All team's forecasts were visualized and compared in the Mosqlimate platform, which is designed for comparing arbovirus forecasting experiments:
 
 • climatic, demographic and case open datasets: https://api.mosqlimate.org/datastore/
 
