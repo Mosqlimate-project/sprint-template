@@ -175,14 +175,6 @@ For MG:
 |--------|--------|
 | ![MG - 2023](./figures/ranking_MG_2023.png) | ![MG - 2024](./figures/ranking_MG_2024.png) |
 
-### Global ranking
-The global rank summarizes the performance of the models among all five states using the six scores described above. The results are presented per year.  
-
-| Global - 2023 | Global - 2024 |
-|--------|--------|
-| ![Global - 2023](./figures/ranking_global_2023.png) | ![Global - 2024](./figures/ranking_global_2024.png) |
-
-
 ### Full curve challenge  
 
 Here, the rank measures the performance of the models considering the full time series. This is done using the scores: 𝑆<sub>1</sub> , 𝑆<sub>3</sub> , and 𝑆<sub>5</sub>
