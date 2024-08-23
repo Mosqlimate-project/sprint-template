@@ -59,7 +59,6 @@ For each year and state, the models were assessed according to the six scores li
 |𝑆<sub>4</sub>     |Log Score       |EW41 2022 - EW14 2023     |EW41 2023 - EW14 2024     |
 |S<sub>5</sub>     |Interval Score  |EW41 2022 - EW40 2023     |EW41 2023 - EW23 2024     |
 |S<sub>6</sub>     |Interval Score  |EW41 2022 - EW14 2023     |EW41 2023 - EW14 2024     |
->>>>>>> a40d2cc (Update the figures)
 
 where S* is given by the follow equation:
 
