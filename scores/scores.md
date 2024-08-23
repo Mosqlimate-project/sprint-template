@@ -142,7 +142,7 @@ The figures in this section are generated in the `compare_the_scores_figures.ipy
 ![CRPS score](./figures/curve_crps.png)
 
 ### Log score
-The Figure below presents the Log score by model and state. **Lower is better**: 
+The Figure below presents the Log score by model and state. The Log score was truncated in -100. **Upper is better**: 
 
 ![log_ score](./figures/curve_log_score.png)
 
