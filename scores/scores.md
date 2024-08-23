@@ -10,13 +10,8 @@ Seven teams participated in the Dengue 2024 Sprint. They submited dengue predict
 6. [Ki-Dengu Peppa](https://github.com/Mosqlimate-project/kidenguPeppa) - Weekly and yearly (iid) components and Weekly and yearly (rw1) components Models
 7. [DS_OKSTATE](https://github.com/haridas-das/DS_OKSTATE) - Info dengue CNN LSTM Ensemble Model
 
-
-<<<<<<< HEAD
-
-All teams' forecast can be visualized and compared in the Mosqlimate platform for comparing arbovirus forecasting experiments:
-=======
 All team's forecasts can be visualized and compared in the Mosqlimate platform for comparing arbovirus forecasting experiments:
->>>>>>> a40d2cc (Update the figures)
+
 • climatic, demographic and case open datasets: https://api.mosqlimate.org/datastore/
 
 • Model Registry: https://api.mosqlimate.org/models/
@@ -56,16 +51,6 @@ where $I$ is the indicator function, $\alpha$ the significance level of the inte
 ## Ranking
 For each year and state, the models were assessed according to the six scores listed in the table below.
 
-<<<<<<< HEAD
-| Average Score S* | Score (S) used | Length (Week)|
-| -----------------| ---------------|--------------|
-|𝑆<sub>1</sub>     |CRPS            | 52           |
-|𝑆<sub>2</sub>     |CRPS            | 26           |
-|𝑆<sub>3</sub>     |Log Score       | 52           |
-|𝑆<sub>4</sub>     |Log Score       | 26           | 
-|S<sub>5</sub>     |Interval Score  | 52           |
-|S<sub>6</sub>     |Interval Score  | 26           | 
-=======
 | Average Score S* | Score (S) used | Evaluated range - test1  | Evaluated range - test2  |
 | -----------------| ---------------|--------------------------|--------------------------|
 |𝑆<sub>1</sub>     |CRPS            |EW41 2022 - EW40 2023     |EW41 2023 - EW23 2024     |
@@ -103,7 +88,7 @@ Table below shows the teams and their corresponding model id:
 | Team                     | Model id | Approach and reference     |
 | ------------------------ | -------- |--------------------------- |
 | D-fense                  | ---------|--------------------------- |
-| Dobby Data               | 21   |[LTSH model](https://github.com/eduardocorrearaujo/lstm_transf_to_state)|
+| Dobby Data               | 21   |[LTSM model](https://github.com/eduardocorrearaujo/lstm_transf_to_state)|
 | Global Health Resilience | 22   |[Temp-SPI Interaction Model](https://github.com/giovemoiran/infodengue-sprint-lsl)|
 | GeoHealth                | 25, 26 |[Prophet and LTSM PCA variance threshold models](https://github.com/ChenXiang1998/Infodengue-Sprint/tree/main/model)|
 | Ki-Dengu Peppa           | 27, 28 |[Weekly and yearly (iid) and Weekly and yearly (rw1) components Models](https://github.com/Mosqlimate-project/kidenguPeppa)|
