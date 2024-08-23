@@ -212,4 +212,8 @@ In the spirit of the olympyc games we have compiled a medal table to recognize t
 ## Final Medal Table
 <img src="figures/quadro-final-medalhas.png">
 
+# Citing this report
+
+When citing use the following DOI 
+
 
