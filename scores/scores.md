@@ -104,7 +104,7 @@ The plots below show the predicted and observed epidemic curves for the two year
 ![Predicted curves](./figures/comp_preds.png)
 
 ### Predicting 2024 peak increase
-In order to evaluate if the models are able to predict the increasing in 2024 related to 2023 we compute an increase rate (IR) using the peak of cases ($P$) in each year using the equation below: 
+In order to assess the models ability to predict the increase in 2024 with respect to 2023, we compute an increase rate (IR) using the peak of cases ($P$) in each year using the equation below: 
 
 $$IR= \cfrac{P_{2024} - P_{2023}}{P_{2023}}$$
 
