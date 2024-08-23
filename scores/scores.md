@@ -49,7 +49,6 @@ where $I$ is the indicator function, $\alpha$ the significance level of the inte
 
 
 ## Ranking
-Individual scores were calculated for each state and each year, corresponding to test 1 and test 2. Based on these scores, the concordance models were classified with different challenges. For each year and state, the models were assessed according the score and the predicted epidemiological week, for each year and state. At the end, a global ranking was calculated. For the emsemble, the models were added to the set incrementally, following the raking order until there is no further improvement in performance.
 
 For each year and state, the models were assessed according to the six scores listed in the table below.
 
