@@ -202,7 +202,7 @@ Here, the rank measures the performance of the models considering only the first
 
 ### Peak accuracy ranking
 
-The overall rating was also calculated in a 3-week window centered on the peak. In this case, the ranking is calculated based on just 3 scores: CRPS, Record score and Interval score, but the logic used remains the same.  
+The overall ranking was also calculated using only the scores from the 3-week window centered on the peak. In this case, the ranking is calculated based on just 3 scores: CRPS, Record score and Interval score.  
 
 | Global (peak) - 2023 | Global (peak) - 2024 |
 |--------|--------|
