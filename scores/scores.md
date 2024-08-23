@@ -119,22 +119,20 @@ In 2024, all states presented higher dengue peaks than in 2023. In MG and GO, th
 
 ## Scoring
 
-The scores of each model were calculated weekly. 
+All figures in this section were generated in the `compare_the_scores_figures.ipynb` notebook. 
 
 ### CRPS score
-The Figure below represents the CRPS score by model and state. **Lower is better**: 
-
-The figures in this section are generated in the `compare_the_scores_figures.ipynb` notebook. 
+The Figure below shows the weekly CRPS score of each model, by state. **Lower is better**: 
 
 ![CRPS score](./figures/curve_crps.png)
 
 ### Log score
-The Figure below presents the Log score by model and state. The Log score was truncated in -100. **Upper is better**: 
+The Figure below presents the weekly Log score by model and state. The Log score was truncated in -100. **Upper is better**: 
 
 ![log_ score](./figures/curve_log_score.png)
 
 ### Interval score
-The Figure below presents the interval score by model and state. **Lower is better**: 
+The Figure below presents the weekly interval score by model and state. **Lower is better**: 
 
 ![CRPS score](./figures/curve_interval_score.png)
 
