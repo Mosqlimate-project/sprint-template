@@ -115,7 +115,7 @@ The results are in shown table below:
 
 ![Increase rate ](./figures/increase_rate.png)
 
-The negative growth rate for the EC for most of the models may be associated with the fact that most of them overestimated the cases in 2023. 
+In 2024, all states presented higher dengue peaks than in 2023. In MG and GO, the peaks were three times higher. In general, the performance of the models was better in XX and worse in GO. We highlight DD model as the only one that predicted increase in all states, and GHR & KDP as the ones that most accurately performed in MG.   
 
 ## Scoring
 
