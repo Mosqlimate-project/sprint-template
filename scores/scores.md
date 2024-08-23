@@ -3,12 +3,12 @@ The Mosqlimate group assessed the performance of each model using a set of score
 
 Seven teams participated in the Dengue 2024 Sprint. They submited dengue predictions using a variety of modeling approaches:
 
-1. [Dobby Data](https://github.com/eduardocorrearaujo/lstm_transf_to_state) - LTSM model
-3. [GeoHealth](https://github.com/ChenXiang1998/Infodengue-Sprint/tree/main/model) - Prophet model with PCA and variance threshold and LSTM model with PCA and variance threshold Models
-4. [Global Health Resilience](https://github.com/giovemoiran/infodengue-sprint-lsl) - Temp-SPI Interaction Model
-5. [BB-M](https://github.com/lsbastos/bb-m) - Bayesian baseline random effects model
-6. [Ki-Dengu Peppa](https://github.com/Mosqlimate-project/kidenguPeppa) - Weekly and yearly (iid) components and Weekly and yearly (rw1) components Models
-7. [DS_OKSTATE](https://github.com/haridas-das/DS_OKSTATE) - Info dengue CNN LSTM Ensemble Model
+1. [Dobby Data](https://github.com/eduardocorrearaujo/lstm_transf_to_state) (DD)- LTSM model
+3. [GeoHealth](https://github.com/ChenXiang1998/Infodengue-Sprint/tree/main/model) (GH) - Prophet model with PCA and variance threshold and LSTM model with PCA and variance threshold Models
+4. [Global Health Resilience](https://github.com/giovemoiran/infodengue-sprint-lsl) (GHR) - Temp-SPI Interaction Model
+5. [BB-M](https://github.com/lsbastos/bb-m) (BBM) - Bayesian baseline random effects model
+6. [Ki-Dengu Peppa](https://github.com/Mosqlimate-project/kidenguPeppa) (KDP)- Weekly and yearly (iid) components and Weekly and yearly (rw1) components Models
+7. [DS_OKSTATE](https://github.com/haridas-das/DS_OKSTATE) (OK) - Info dengue CNN LSTM Ensemble Model
 
 All team's forecasts can be visualized and compared in the Mosqlimate platform for comparing arbovirus forecasting experiments:
 
