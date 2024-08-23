@@ -141,6 +141,8 @@ The Figure below presents the weekly interval score by model and state. **Lower 
 
 The figures in this section are generated in the `Apply_the_score_to_predictions.ipynb` notebook. 
 
+For each state, we show the rank of the models in 2023 and 2024. 
+
 For AM: 
 
 | AM - 2023 | AM - 2024 |
