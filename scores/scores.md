@@ -10,7 +10,7 @@ Seven teams participated in the Dengue 2024 Sprint. They submited dengue predict
 6. [Ki-Dengu Peppa](https://github.com/Mosqlimate-project/kidenguPeppa) (KDP)- Weekly and yearly (iid) components and Weekly and yearly (rw1) components Models
 7. [DS_OKSTATE](https://github.com/haridas-das/DS_OKSTATE) (OK) - Info dengue CNN LSTM Ensemble Model
 
-All team's forecasts were visualized and compared in the Mosqlimate platform, which is designed for comparing arbovirus forecasting experiments:
+All team's forecasts were visualized and compared in the Mosqlimate platform, which is designed for comparing arbovirus forecasting experiments using the following tools:
 
 • climatic, demographic and case open datasets: https://api.mosqlimate.org/datastore/
 
@@ -18,7 +18,7 @@ All team's forecasts were visualized and compared in the Mosqlimate platform, wh
 
 • Visualization tools: https://api.mosqlimate.org/vis/dashboard
 
-All teams submitted forecasts for the 2022-2023 and 2023-2024 seasons for the states of Amazonas (AM), Ceará (CE), Goiás (GO), Minas Gerais (MG), and Paraná (PR).
+All teams successfully submitted to the platform their forecasts for the 2022-2023 and 2023-2024 seasons for the states of Amazonas (AM), Ceará (CE), Goiás (GO), Minas Gerais (MG), and Paraná (PR).
 
 ### Remember the sprint goals:
 Provide forecasts for 2025, at state level, by:
