@@ -90,8 +90,8 @@ Table below shows the teams and their corresponding model id:
 | Team                     | Model id | Approach and reference     |
 | ------------------------ | -------- |--------------------------- |
 | D-fense                  | ---------|--------------------------- |
-| Dobby Data               | 21   |[LTSM model](https://github.com/eduardocorrearaujo/lstm_transf_to_state)|
-| Global Health Resilience | 22   |[Temp-SPI Interaction Model](https://github.com/giovemoiran/infodengue-sprint-lsl)|
+| Dobby Data (DD)          | 21   |[LTSM model](https://github.com/eduardocorrearaujo/lstm_transf_to_state)|
+| Global Health Resilience (GHR) | 22   |[Temp-SPI Interaction Model](https://github.com/giovemoiran/infodengue-sprint-lsl)|
 | GeoHealth                | 25, 26 |[Prophet and LTSM PCA variance threshold models](https://github.com/ChenXiang1998/Infodengue-Sprint/tree/main/model)|
 | Ki-Dengu Peppa           | 27, 28 |[Weekly and yearly (iid) and Weekly and yearly (rw1) components Models](https://github.com/Mosqlimate-project/kidenguPeppa)|
 | DS_OKSTATE               | 29   |[Info dengue CNN LSTM Ensemble Model](https://github.com/haridas-das/DS_OKSTATE)|
