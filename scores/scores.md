@@ -20,6 +20,19 @@ All team's forecasts can be visualized and compared in the Mosqlimate platform f
 
 All teams submitted forecasts for the 2022-2023 and 2023-2024 seasons for the states of Amazonas (AM), Ceará (CE), Goiás (GO), Minas Gerais (MG), and Paraná (PR).
 
+## Remember the sprint goals:
+Provide forecasts for 2025, at state level, by:
+1. Organizing a community of modellers with unified goal and methods - done
+2. Together generate a set of independent models tested using data from previous seasons - done
+3. Train ensemble model with all submissions 
+4. Produce forecasts for 2025 using the best models, either single or combined
+5. Report the results as a technical report to the Ministry of Health
+6. Update and monitor the performance of the models in 2025
+7. Publish a scientific paper on this experience
+8. Organize a larger Sprint initiative in 2025.
+
+
+
 # Scoring and Ranking
 
 ## Scores
