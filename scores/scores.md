@@ -47,10 +47,7 @@ $$
 
 where $I$ is the indicator function, $\alpha$ the significance level of the interval, $u_i$ the upper value of the interval at week $i$ and $l_i$ the lower value. 
 
-
-## Ranking
-
-For each year and state, the models were assessed according to the six scores listed in the table below.
+The scores were calculated for each state and each year, corresponding to test 1 and test 2. For each year and state, the models were assessed according to the six scores listed in the table below.
 
 | Average Score S* | Score (S) used | Evaluated range - test1  | Evaluated range - test2  |
 | -----------------| ---------------|--------------------------|--------------------------|
@@ -62,6 +59,8 @@ For each year and state, the models were assessed according to the six scores li
 |S<sub>6</sub>     |Interval Score  |EW41 2022 - EW14 2023     |EW41 2023 - EW14 2024     |
 
 where S* is given by the follow equation:
+
+## Ranking
 
 The models were ranked according to each score, that is, each model received rank $R_1$, $R_2$, …, $R_6$, for each year and state. Finally, the final ranking $R_{Y,S}$ (column `composite_rank`)of the models were calculated with the following formula, for each **year** and **state**:
 
