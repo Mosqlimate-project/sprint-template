@@ -84,6 +84,7 @@ The global ranking (colum `global_rank`) were calculated for each **year**  usin
 # Results
 
 Table below shows the teams and their corresponding model id: 
+
 | Team                     | Model id | Approach and reference     |
 | ------------------------ | -------- |--------------------------- |
 | D-fense                  | ---------|--------------------------- |
@@ -208,5 +209,11 @@ The table above was created using the notebook `Apply_the_score_peaks.ipynb`
 
 # Conclusion
 
-**to do**
+In the spirit of the olympyc games we have compiled a medal table to recognize the top three models on each sub-challenge.
+
+<img src="./figures/medalhas.webp" width="300px"/>
+
+## Final Medal Table
+<img src="figures/quadro-final-medalhas.png">
+
 
