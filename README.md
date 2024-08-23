@@ -1,6 +1,9 @@
 # Infodengue dengue Forecast Sprint
 ![sprint](sprint.jpeg)
 
+# ATTENTION!!
+The [results](scores/scores.md) for the 2024 sprint are out! Check them out to see how your team did!
+
 ## Registering in the Mosqlimate Platform
 The Mosqlimate Platform is responsible for all interactions with the the participants of this sprint, including getting the data and uploading predictions. Therefore, to participate in this sprint, the first step we require from you, as team leader, is to register your team to the Mosqlimate platform (There is not cost associate with this membership). In order to to this, simply go to [api.mosqlimate.org](https://api.mosqlimate.org/), click on the "Login with GitHub" in the top right corner of the page, and follow the instructions. Once you create your Mosqlimate profile, you are set to follow the steps below.
 
