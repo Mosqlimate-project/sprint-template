@@ -47,7 +47,7 @@ $$
 
 where $I$ is the indicator function, $\alpha$ the significance level of the interval, $u_i$ the upper value of the interval at week $i$ and $l_i$ the lower value. 
 
-The scores were calculated for each state and each year, corresponding to test 1 and test 2. For each year and state, the models were assessed according to the six scores listed in the table below.
+The scores were calculated for each state and each year, corresponding to test 1 and test 2. For each combination of state and year, we averaged the scores over the full time series and over the first half.  The twelve scores are described in the table below.
 
 | Average Score S* | Score (S) used | Evaluated range - test1  | Evaluated range - test2  |
 | -----------------| ---------------|--------------------------|--------------------------|
