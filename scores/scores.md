@@ -183,17 +183,17 @@ The global rank summarizes the performance of the models among all five states u
 | ![Global - 2023](./figures/ranking_global_2023.png) | ![Global - 2024](./figures/ranking_global_2024.png) |
 
 
-### Global ranking using the scores: 𝑆<sub>1</sub> , 𝑆<sub>3</sub> , and 𝑆<sub>5</sub> 
+### Full curve challenge  
 
-Here, the rank measures the performance of the models considering the full time series. 
+Here, the rank measures the performance of the models considering the full time series. This is done using the scores: 𝑆<sub>1</sub> , 𝑆<sub>3</sub> , and 𝑆<sub>5</sub>
 
 | Global - 2023 | Global - 2024 |
 |--------|--------|
 | ![Global - 2023](./figures/ranking_52_global_2023.png) | ![Global - 2024](./figures/ranking_52_global_2024.png) |
 
-### Global ranking using the scores: 𝑆<sub>2</sub> , 𝑆<sub>4</sub> , and 𝑆<sub>6</sub> 
+### Half curve challenge 
 
-Here, the rank measures the performance of the models considering only the first half of the time series. 
+Here, the rank measures the performance of the models considering only the first half of the time series, using the scores: 𝑆<sub>2</sub> , 𝑆<sub>4</sub> , and 𝑆<sub>6</sub>
 
 | Global - 2023 | Global - 2024 |
 |--------|--------|
