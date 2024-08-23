@@ -184,7 +184,7 @@ The global rank for each mandatory state and year is:
 
 
 ### Global ranking using the scores: 𝑆<sub>1</sub> , 𝑆<sub>3</sub> , and 𝑆<sub>5</sub> 
-The global rank for each mandatory state and year is: 
+The global rank summarizes the performance of the models among all five states. The results are presented per year.  
 
 | Global - 2023 | Global - 2024 |
 |--------|--------|
