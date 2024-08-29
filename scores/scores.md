@@ -214,6 +214,7 @@ In the spirit of the olympyc games we have compiled a medal table to recognize t
 
 # Citing this report
 
-When citing use the following DOI 
+When citing use the following DOI:
+[![DOI](https://zenodo.org/badge/811495302.svg)](https://zenodo.org/doi/10.5281/zenodo.13367300)
 
 
